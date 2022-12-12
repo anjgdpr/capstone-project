@@ -1,0 +1,64 @@
+.section{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 5rem auto;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.section img{
+    width: 350px;
+    padding-right: 30px;
+    flex: 0 0 150px;
+}
+
+.back-btn{
+    padding: 10px;
+    width: 60%;
+    margin: 8rem 0 0 10rem;
+    border-bottom: 2px solid #000;
+    width: 90px;
+    display:flex;
+}
+
+.back-btn a{
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+
+.back-btn a i:hover{
+    box-shadow: 0 5px 15px #FFEA5A;
+    transition: 0.3s;
+}
+
+.text{
+    background-color: #EBECF0;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.text p{
+    margin-bottom: 50px;
+}
+
+.edit-btn{
+    float: right;
+    background-color: #D3C586;
+    border: 2px solid #D3C586;
+    text-align: center;
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.edit-btn:hover{
+    box-shadow: 0 5px 15px #888888;
+    transition: 0.3s;
+}
+/* View */

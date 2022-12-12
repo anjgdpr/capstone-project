@@ -1,0 +1,54 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/lib-index.css'%}">
+{% endblock %}
+
+{% block accounts %}
+    {% include 'partials/_navbar.html'%}
+{% endblock %}
+
+{% block title %} 
+    Home
+{% endblock %} 
+
+{% block content %}
+
+<!-- Start of content -->
+    <div class="home">
+        <div class="text">
+            <h1>Welcome, {{ user }}!</h1> <br>
+            <div class="date">
+                Today is 
+                <b><span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span>
+                <span id="year">Year </span></b>.
+            </div><br>
+            <div class="time">
+                <span id="hour">00</span> :
+                <span id="minutes">00</span> :
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div><br>
+            Have a good day!
+        </div>
+
+         <!-- Start of Slider -->
+        <div class="slider-container">
+            <div class="welcome-card">
+                <img src="{% static 'image/1.jpg'%}">
+                <img src="{% static 'image/2.jpg'%}">
+                <img src="{% static 'image/3.jpg'%}">
+                <img src="{% static 'image/4.jpg'%}">
+            </div>
+        </div>
+    </div>
+    <!-- End of Slider -->
+
+<!-- End of Content -->
+{% endblock %}
+{% block footer %}
+    {% include 'partials/_footer.html'%}
+{% endblock %}

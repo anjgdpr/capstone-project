@@ -1,0 +1,317 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/st-index.css'%}">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block title %} 
+    Home
+{% endblock %} 
+
+{% block accounts %}
+ {% include 'partials/_s-navbar.html'%}
+{% endblock%}
+
+{% block content %}
+
+    <!--IMAGE SLIDER-->
+    <div class="content">
+        <div class="images">
+            <img class="photos" src="{% static 'image/c3.png'%}">
+            <img class="photos" src="{% static 'image/c1.png'%}">
+            <img class="photos" src="{% static 'image/c2.png'%}">
+            <img class="photos" src="{% static 'image/c4.png'%}">
+            <img class="photos" src="{% static 'image/c5.png'%}">
+        </div>
+
+        <div onclick="side_slide(-1)" class="slide left">
+            <span class="fas fa-angle-left"></span>
+        </div>
+        <div onclick="side_slide(1)" class="slide right">
+            <span class="fas fa-angle-right"></span>
+        </div>
+        <div class="btm-sliders">
+            <span onclick="btm_slide(1)"></span>
+            <span onclick="btm_slide(2)"></span>
+            <span onclick="btm_slide(3)"></span>
+            <span onclick="btm_slide(4)"></span>
+            <span onclick="btm_slide(5)"></span>
+        </div>
+    </div>
+
+    <div class="search-box">
+        <img src="{% static 'image/book.png' %}">
+        <form action="{% url 's_search'%}" method="GET">
+        <input class="search-txt" type="text" name="search" placeholder="Search anything..." class="form-control">
+        <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    
+    {% comment %} <div class="search-center">
+        <input class="chck-btn" type="checkbox" id="show">
+        <div class="search-container">
+            <label for="show" class="close-btn fas fa-times"></label>
+            Search Filters
+            <form action="post">
+                <select class="select-field" name="Field" id="field">
+                    <option value="" disabled selected hidden>Any Field</option>
+                    <option value="Text">Text</option>
+                    <option value="Author">Author</option>
+                    <option value="Abstract">Abstract</option>
+                  </select>
+                  <select class="select-field" name="Contains" id="contains">
+                    <option value="Is exact">Is exact</option>
+                    <option value="Starts with">Starts with</option>
+                  </select>
+                  <input class="text-field" type="text" id="keywords" placeholder="Insert word/phrase here">
+                  <br>
+                  Start Date<br>
+                  <select class="select-field" name="sday" id="sday">
+                    <option value="" disabled selected hidden>Day</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select>
+                  <select class="select-field" name="eMonth" id="emonth">
+                    <option value="" disabled selected hidden>Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <input class="text-field" type="text" id="syear" placeholder="Start Year">
+                <br>
+                End Date<br>
+                <select class="select-field" name="eday" id="eday">
+                    <option value="" disabled selected hidden>Day</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select class="select-field" name="eMonth" id="emonth">
+                  <option value="" disabled selected hidden>Month</option>
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+              </select>
+              <input class="text-field" type="text" id="eyear" placeholder="End Year">
+              <br><br>
+              <table>
+                <tr>
+                    <td>
+                        <label>College</label>
+                    </td>
+                    <td>
+                        <label>Course</label>
+                    </td>
+                    <td>
+                        <label>Type</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="select-field" name="slct1" id="slct1" class="custom-select" onchange="populate(this.id, 'slct2')">
+                            <option value="" disabled selected hidden>Colleges</option>
+                            <option value="College of Architecture and Urban Planning">College of Architecture and Urban Planning</option>
+                            <option value="College of Education">College of Education</option>
+                            <option value="College of Engineering and Technology">College of Engineering and Technology</option>
+                            <option value="College of Humanities, Arts and Social Sciences">College of Humanities, Arts and Social Sciences</option>
+                            <option value="College of Medicine">College of Medicine</option>
+                            <option value="College of Nursing">College of Nursing</option>
+                            <option value="College of Physical Therapy">College of Physical Therapy</option>
+                            <option value="College of Science">College of Science</option>
+                            <option value="College of Law">College of Law</option>
+                            <option value="Graduate School of Law">Graduate School of Law</option>
+                            <option value="PLM Business School">PLM Business School</option>
+                            <option value="School of Government">School of Government</option>
+                            <option value="School of Public Health">School of Public Health</option>
+                          </select>
+                    </td>
+                    <td>
+                        <select class="select-field" name="slct2" id="slct2" class="custom-select">
+                        </select>
+                    </td>
+                    <td>
+                        <select class="select-field" name="Type" id="type">
+                            <option value="" disabled selected hidden>Type</option>
+                            <option value="Undergraduate">Undergraduate</option>
+                            <option value="Graduate School">Graduate</option>
+                          </select>
+                    </td>
+                </tr>
+              </table>
+              <div class="srch">
+                <i class="fa-solid fa-magnifying-glass"></i><input class="srch-btn" type="submit" value="SEARCH">
+              </div>
+            </form>
+        </div>
+    </div> {% endcomment %}
+
+    <!-- About Us Card START -->
+    <div class="about-container" id="about-us">
+        <div class="about-text">
+            <h1>About</h1>
+            <p>PLM Library Search is Pamantasan ng Lungsod ng Maynila’s new unified discovery system that streamlines your search for the university's research papers. </p><br>
+            <p> PLM Library Search includes:
+            <ul class="lista">
+                <li>Filipiniana Section</li>
+                <li>Health & Sciences Library</li>
+                <li>Graduate School Library</li>
+            </ul>
+            </p><br>
+             <p>
+                PLM Library Search <b>does not</b> include everything the library offers. (ex: Research papers dated 2016 or earlier, and other collections.) 
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="{%static 'image/PLM_Logo-removebg-preview.png'%}">
+        </div>
+    </div>
+    <!-- About Us Card END -->
+
+<div class="grid-container">
+    <div class="grid-child 1">
+        <div class="about-text">
+            <h1> Service Hours</h1>
+            <p>Onsite library services are available from Monday to Friday at 8:00 a.m. to 5:00 p.m. during regular school days. This excludes Saturdays, Sundays, holidays and suspensions. </p><br>
+            <p> Authorized Library Users:
+            <ul class="lista">
+                <li>Library privileges are granted only to all bona fide PLM students, faculty members and employees</li>
+                <li>A maximum of one (1) hour per day per library user is allowed</li>
+                <li>Limited library users are allowed at a time in each Section or Unit Library.</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="grid-child 2">
+        <div class="about-text">
+            <h1>Sections Location</h1>
+            <p>PLM Library Search is Pamantasan ng Lungsod ng Maynila’s new unified discovery system that streamlines your search for the university's research papers. </p><br>
+            <p> PLM Library Search includes:
+            <ul class="lista">
+                <li>Filipiniana Section</li>
+                <li>Health & Sciences Library</li>
+                <li>Graduate School Library</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+</div>
+    <!-- About Us Card END -->
+
+    <!-- End of Content -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script>
+            $(window).scroll(function(){
+                if($(window).scrollTop()){
+                    $("nav").removeClass("yellow");
+                }
+                else{
+                    $("nav").addClass("yellow");
+                }
+            });
+        </script>
+
+        <script>
+            var indexValue = 1;
+            showImg(indexValue);
+            function btm_slide(e) { showImg(indexValue = e); }
+            function side_slide(e) { showImg(indexValue += e); }
+            function showImg(e) {
+                var i;
+                const pics = document.getElementsByClassName('photos');
+                const sliders = document.querySelectorAll('.btm-sliders span');
+                if (e > pics.length) { indexValue = 1 }
+                if (e < 1) { indexValue = pics.length }
+                for (i = 0; i < pics.length; i++) {
+                    pics[i].style.display = "none";
+                }
+                for (i = 0; i < sliders.length; i++) {
+                    sliders[i].style.background = "rgba(255,255,255,0.1)";
+                }
+                pics[indexValue - 1].style.display = "block";
+                sliders[indexValue - 1].style.background = "white";
+            }
+        </script>
+
+{% endblock %}
+{% block footer %}
+    {% include 'partials/_footer.html'%}
+{% endblock %}

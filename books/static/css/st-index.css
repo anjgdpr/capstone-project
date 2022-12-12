@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Start of Nav Bar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    /*transition: 0.4s;*/
+    z-index: 9999;
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.mm {
+    list-style: none;
+    background-color: #FFEA5A;
+    overflow: hidden;
+    color: #000;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+.mm-links {
+    display: inline-block;
+    padding: 20px;
+}
+
+/* js for nav bar (pag nagfefade) START 
+nav.yellow .mm{
+    background: rgba(0,0,0,0);
+}
+/* js for nav bar (pag nagfefade) END */
+
+.mm .mm-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mm .mm-links a:hover {
+    background-color: #fff;
+    transition: 0.3s;
+    border: 22px solid #fff;
+}
+
+.sign-in {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #0D6AE4;
+    padding: 5px 5px 5px 5px;
+    width: 120px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.sign-in a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sign-in:hover {
+    background-color: white;
+    border-color: #0D6AE4;
+    box-shadow: 0 5px 15px #888888;
+    
+
+}
+
+.sign-in a:hover {
+    color: #0D6AE4;
+}
+
+/* End of Nav Bar */
+
+/* Start of Content */
+/*SLIDER*/
+.content {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.content .images {
+    height: 100%;
+    width: 100%;
+}
+
+.images img {
+    height: 100%;
+    width: 100%;
+}
+
+.btm-sliders {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.btm-sliders span {
+    height: 20px;
+    width: 20px;
+    border: 2px solid white;
+    margin: 0 3px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*.btm-sliders span:hover{
+    background: white;
+}*/
+
+.content .slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    /*height: 45px;*/
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.content .slide:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.slide span {
+    font-size: 35px;
+    color: white;
+    line-height: 41px;
+    /*cursor: pointer;*/
+}
+
+.content .right {
+    right: 0;
+}
+
+/* Search Box START*/
+.search-box {
+    position: absolute;
+    top: 137%;
+    left: 45%;
+    padding-left: 150px;
+    transform: translate(-50%, -50%);
+
+    /* yung 5 lines above i-aadjust if nag-iinarte yung mga padding if inopen yung adv search */
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box a {
+    margin-left: 10px;
+    color: #000;
+}
+
+.search-box a i {
+    background-color: #FFEA5A;
+    padding: 16px 16px 16px 16px;
+    border-radius: 10px;
+}
+
+.search-box a i:hover {
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    transition: 0.3s;
+}
+
+.search-txt {
+    width: 500px;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+}
+
+.search-box img {
+    width: 60px;
+    padding-right: 10px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+.search-btn i{
+    background-color: #FFEA5A;
+    padding: 16px 16px 16px 16px;
+    border-radius: 10px;
+}
+
+.search-btn i:hover{
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    transition: 0.3s;
+}
+
+/* Search Box END*/
+
+/* Pop up for form START */
+.search-container {
+    display: none;
+    width: 500px;
+    margin-left: 350px; /* dito adjust yung placement nung mismong adv search container para pumantay sa searchbox */
+    padding: 10px 10px 10px 10px;
+    justify-content: center;
+}
+
+.close-btn {
+    float: right;
+}
+
+.close-btn:hover {
+    color: #FFEA5A;
+    cursor: pointer;
+}
+
+#show:checked~.search-container {
+    display: block;
+}
+
+.show-btn {
+    cursor: pointer;
+}
+
+.select-field {
+    width: 120px;
+    border-radius: 6px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 5px 15px #888888;
+}
+
+.text-field {
+    border: 1px solid #888888;
+    border-radius: 6px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 5px 15px #888888;
+}
+
+.srch {
+    float: right;
+    background-color: #0D6AE4;
+    padding: 5px 5px 5px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.srch:hover {
+    box-shadow: 0 5px 15px #888888;
+}
+
+.srch i {
+    color: #fff;
+    margin-right: 7px;
+}
+
+.srch-btn {
+    background-color: #0D6AE4;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.chck-btn {
+    display: none;
+}
+/* Pop up for form END */
+
+/* About us START */
+.about-container {
+    /* height: 90vh; */
+    margin: 50px 0px 50px 270px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #888888;
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.about-card {
+    width: 50%;
+}
+
+.about-img img {
+    width: 350px;
+    margin-left: 20px;
+}
+
+.location-container {
+    /* height: 90vh; */
+    margin-left: 300px;
+    
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #888888;
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    float: left;
+}
+
+.grid-container {
+    margin: 20px 0px 50px 270px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 60%;
+}
+
+.grid-child {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #888888;
+    padding: 30px 30px 30px 30px;
+}
+
+.lista {
+    padding-left: 3em;
+}
+
+/* About us END */
+
+/* End of Content */
+
+/* Start of Footer */
+.sticky-footer {
+    background-color: #FFEA5A;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.footer-content .footer-head {
+    display: flex;
+}
+
+.footer-content .footer-head img {
+    width: 40px;
+    padding-right: 10px;
+}
+
+.pg {
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+/* End of Footer */

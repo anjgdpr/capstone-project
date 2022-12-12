@@ -1,0 +1,86 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/login.css'%}">
+
+{% endblock %}
+
+{% block title %} 
+    Login 
+{% endblock %} 
+
+
+{% block content %}
+
+<div class="wrapper">
+            <header>
+                <nav>
+                    <div class="logo"><a href="/books">PLM Library</a></div>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="bg-gradient"></div>
+
+            <!-- Log In Box -->
+            <div class="content">
+
+                <div class="center">
+                    <div class="head">
+                        <h1>Sign Up</h1>
+                    </div>
+                    <form action="{% url 'register'%}" method="post">
+                        {% csrf_token %}
+                    <div class = "grid-container" >
+                        <div class="grid-child">
+                            {{ form.is_student }}
+                            <label for="student"> As Student </label><br>
+                        </div> 
+                        <div class="grid-child">
+                            {{ form.is_staff }}
+                            <label for="staff"> As Staff </label><br>
+                        </div> 
+                    </div> 
+
+                        <div class="text_field">
+                            <label>Username:</label>
+                            <br>
+                            {{ form.username }}
+                        </div>
+                        <div class="text_field">
+                            <label>Email:</label>
+                            <br>
+                            {{ form.email}}
+                        </div>
+                        <div class="text_field">
+                            <label>Password:</label>
+                            <br>
+                             {{ form.password1 }}
+                        </div>
+                        <div class="text_field">
+                            <label>Confirm Password:</label>
+                            <br>
+                            {{ form.password2 }}
+                        </div>
+                         {% if error_msg %}
+                            <p class="error"> {{error_msg}} </p>
+                        {% endif %}
+                        <div class="foot">
+                            <input type="submit" name="Signup" value="Register">
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+<script>
+function myFunction() {
+  alert("Account created successfully. Please login.");
+}
+</script>
+
+{% endblock %}

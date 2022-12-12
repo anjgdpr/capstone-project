@@ -1,0 +1,46 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/favorites.css'%}">
+{% endblock %}
+
+{% block accounts %}
+    {% include 'partials/_u-navbar.html'%}
+{% endblock %}
+
+{% block title %} 
+    My Favorites
+{% endblock %} 
+
+{% block content%}
+
+<div class="pghead">
+        <h1>{{user}}'s Favorites List</h1>
+        <hr style="width: 410px; color: #FFEA5A;">
+        <p>View or remove papers from your list here.</p>
+    </div>
+    <div class="cards">
+        {% for book in new %}
+        <div class="card">
+            <a href="{% url 's_detail' book.id %}">
+             <img src="media/{{ book.book_image }}" alt="bookimage" class="card-img">
+            <div class="card-content">
+                <b>Title: </b> {{ book.book_title }}<br>
+                <b>Year: </b> {{ book.pub_year }}<br>
+                <b>Abstract:</b> {{ book.book_abstract|truncatechars:100 }}<br>
+            </div>
+            <div class="addtl-info">
+                <div>
+                    <a style="color: #000000;" href="{% url 'favorite_add' book.id %}"> Remove</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %} 
+</div>
+
+{% endblock %}
+{% block footer %}
+    {% include 'partials/_footer.html'%}
+{% endblock %}

@@ -1,0 +1,160 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/st-details.css'%}">
+<style> 
+    .button:hover { 
+        cursor: pointer; 
+        box-shadow: 0 5px 15px #888888;
+    }
+    .button:focus { 
+        box-shadow: 0px 0px 0px 1px rgba(112,111,211,1);
+    }
+</style> 
+{% endblock %}
+
+{% block accounts %}
+    {% include 'partials/_u-navbar.html'%}
+{% endblock %}
+
+{% block title %} 
+    {{book.book_title}}
+{% endblock %} 
+
+{% block content%}
+<!-- View  START-->
+<br><br>
+<div class="back-btn">
+        <a href="javascript:history.back()"><i class="fas fa-arrow-left"> Back </i></a>
+    </div>
+
+    <div class="section">
+        <div class="imgBox">
+            <img src="/books/media/{{book.book_image}}" alt="bookimage"> <br> <br> 
+            {% if fav %}
+            <center>
+            <button style="border-radius: 10px; background: #FDE959; border:none; padding: 5px 5px 5px 5px;" class="button" type="button" onclick="location.href='{% url 'favorite_add' book.id %}'" align="center"><h3> Add to Favorites </h3></button>
+            </center>
+            {% else %}
+            <center><button style="border-radius: 10px; background: #FDE959; border:none; padding: 5px 5px 5px 5px;" class="button" type="button" onclick="location.href='{% url 'favorite_add' book.id %}'" align="center"><h3> Remove from Favorites </h3></button></center>
+            {% endif %}
+            <!--
+                <a href ="{% url 'favorite_add' book.id %}"> <h3 align="center"><u> Add to Favorites </u></h3></a> 
+            -->
+        </div>
+        <div class="text">
+            <h1>Title: {{book.book_title}}</h1>
+            <p>
+                <b>College:</b> {{book.book_college}} <br>
+                <b>Course:</b> {{book.book_course}}  <br>
+                <b>Section:</b> {{book.book_type}}  <br>
+                <b>Author/s:</b> {{book.book_authors}} <br>
+                <b>Compilation Date:</b>  {{book.pub_month}}, {{book.pub_year}}  <br><br>
+            
+
+                <b>Abstract:</b> 
+                {{book.book_abstract}}
+                </p>
+        </div>
+    </div>
+ <!-- View END -->
+
+ {% for i in recommend %}
+
+ {% endfor %}
+ <h2><u>Browse Similar Papers:</u></h2><br>
+ <div class="flex">
+    <div class="card">
+        <img src="{%static 'image/book.png'%}"><br>
+        <div class="browse-content">
+            <b>Title:</b>Lorem ipsum<br>
+                    <b>Year:</b><br>
+                    <b>Abstract:</b> dolor sit amet consectetur adipisicing elit. Nulla possimus, voluptatem nihil
+                    corrupti, autem quas velit cupiditate corporis quis nam maiores dolore molestias aspernatur? Suscipit
+                    possimus assumenda accusamus consequatur error?<br>
+            <div class="eye">
+                <i class="fa-solid fa-eye"></i> Views
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="{%static 'image/book.png'%}"><br>
+        <div class="browse-content">
+            <b>Title:</b>Lorem ipsum<br>
+                    <b>Year:</b><br>
+                    <b>Abstract:</b> dolor sit amet consectetur adipisicing elit. Nulla possimus, voluptatem nihil
+                    corrupti, autem quas velit cupiditate corporis quis nam maiores dolore molestias aspernatur? Suscipit
+                    possimus assumenda accusamus consequatur error?<br>
+            <div class="eye">
+                <i class="fa-solid fa-eye"></i> Views
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="{%static 'image/book.png'%}"><br>
+        <div class="browse-content">
+            <b>Title:</b>Lorem ipsum<br>
+                    <b>Year:</b><br>
+                    <b>Abstract:</b> dolor sit amet consectetur adipisicing elit. Nulla possimus, voluptatem nihil
+                    corrupti, autem quas velit cupiditate corporis quis nam maiores dolore molestias aspernatur? Suscipit
+                    possimus assumenda accusamus consequatur error?<br>
+            <div class="eye">
+                <i class="fa-solid fa-eye"></i> Views
+            </div>
+        </div>
+    </div>
+</div><br><br> 
+
+<h2><u>Based on your recent activity: </u></h2><br>
+ <div class="flex">
+    <div class="card">
+        <img src="{%static 'image/book.png'%}"><br>
+        <div class="browse-content">
+            <b>Title:</b>Lorem ipsum<br>
+                    <b>Year:</b><br>
+                    <b>Abstract:</b> dolor sit amet consectetur adipisicing elit. Nulla possimus, voluptatem nihil
+                    corrupti, autem quas velit cupiditate corporis quis nam maiores dolore molestias aspernatur? Suscipit
+                    possimus assumenda accusamus consequatur error?<br>
+            <div class="eye">
+                <i class="fa-solid fa-eye"></i> Views
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="{%static 'image/book.png'%}"><br>
+        <div class="browse-content">
+            <b>Title:</b>Lorem ipsum<br>
+                    <b>Year:</b><br>
+                    <b>Abstract:</b> dolor sit amet consectetur adipisicing elit. Nulla possimus, voluptatem nihil
+                    corrupti, autem quas velit cupiditate corporis quis nam maiores dolore molestias aspernatur? Suscipit
+                    possimus assumenda accusamus consequatur error?<br>
+            <div class="eye">
+                <i class="fa-solid fa-eye"></i> Views
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="{%static 'image/book.png'%}"><br>
+        <div class="browse-content">
+            <b>Title:</b>Lorem ipsum<br>
+                    <b>Year:</b><br>
+                    <b>Abstract:</b> dolor sit amet consectetur adipisicing elit. Nulla possimus, voluptatem nihil
+                    corrupti, autem quas velit cupiditate corporis quis nam maiores dolore molestias aspernatur? Suscipit
+                    possimus assumenda accusamus consequatur error?<br>
+            <div class="eye">
+                <i class="fa-solid fa-eye"></i> Views
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block footer %}
+    {% include 'partials/_footer.html'%}
+{% endblock %}

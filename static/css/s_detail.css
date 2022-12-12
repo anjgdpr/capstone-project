@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* Start of Nav Bar */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 9999;
+}
+
+.content{
+    width: 100%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo{
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.mm{
+    list-style: none;
+    background: #FFEA5A;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+.mm-links{
+    display: inline-block;
+    padding: 20px;
+}
+
+.menu .mm .mm-links .active{
+    background-color: #fff;
+    border: 22px solid #fff;
+}
+
+.mm .mm-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mm .mm-links a:hover{
+    background-color: #fff;
+    transition: 0.3s;
+    border: 22px solid #fff;
+}
+
+.sign-in{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #0D6AE4;
+    padding: 5px 5px 5px 5px;
+    width: 120px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.sign-in a{
+    text-decoration: none;
+    color: #fff;    
+}
+
+.sign-in:hover{
+    box-shadow: 0 5px 15px #888888;
+}
+
+/* End of Nav Bar */
+
+/* Start of Content */
+
+/* Search box */
+.search-box{
+    margin-top: 100px;
+    margin-left: 40px;
+    /* dito sa 2 lines above iaadjust placement ng search container */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box a{
+    margin-left: 10px;
+    color: #000;
+}
+
+.search-box a i{
+    background-color: #FFEA5A;
+    padding: 16px 16px 16px 16px;
+    border-radius: 10px;
+}
+
+.search-box a i:hover{
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    transition: 0.3s;
+}
+
+.search-txt{
+    width: 500px;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+}
+
+.search-box img{
+    width: 60px;
+    padding-right: 10px;
+}
+/* Search box */
+
+/* Pop up for form START */
+.search-container{
+    display: none;
+    width: 500px;
+    margin-left: 360px; /* dito iaadjust para magline up yung adv search sa regular search text box */
+    padding: 10px 10px 10px 10px;
+    justify-content: center;
+}
+
+.close-btn{
+    float: right;
+}
+
+.close-btn:hover{
+    color: #FFEA5A;
+    cursor: pointer;
+}
+
+#show:checked ~ .search-container{
+    display: block;
+}
+
+.show-btn{
+    cursor: pointer;
+}
+
+.select-field{
+    width: 120px;
+    border-radius: 6px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 5px 15px #888888;
+}
+
+.text-field{
+    border: 1px solid #888888;
+    border-radius: 6px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 5px 15px #888888;
+}
+
+.srch{
+    float: right;
+    background-color: #0D6AE4;
+    padding: 5px 5px 5px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.srch:hover{
+    box-shadow: 0 5px 15px #888888;
+}
+
+.srch i{
+    color: #fff;
+    margin-right: 7px;
+}
+
+.srch-btn{
+    background-color: #0D6AE4;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.chck-btn{
+    display: none;
+}
+/* Pop up Adv Search END */
+
+/* View */
+.section{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    
+    padding: 40px;
+}
+
+.section img{
+    width: 350px;
+    padding-right: 30px;
+    flex: 0 0 150px;
+}
+
+.back-btn{
+    padding: 10px;
+    width: 60%;
+    margin: 3rem 0 0 10rem;
+    border-bottom: 2px solid #000;
+    width: 90px;
+    display:flex;
+}
+
+.back-btn a{
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+
+.back-btn a i:hover{
+    box-shadow: 0 5px 15px #FFEA5A;
+    transition: 0.3s;
+}
+
+.text{
+    background-color: #EBECF0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.text p{
+    margin-bottom: 50px;
+}
+/* View */
+
+/* Books */
+.container{
+    width: 100% !important;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.card{
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    flex: 1 0 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.card img{
+    max-width: 150px;
+    width: 100%;
+}
+
+.card .browse-content .eye{
+   float: right;
+}
+
+/* End of Content */
+
+/* Start of Footer */
+.sticky-footer{
+    background-color: #FFEA5A;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.footer-content .footer-head{
+    display: flex;
+}
+
+.footer-content .footer-head img{
+    width: 40px;
+    padding-right: 10px;
+}
+
+.pg{
+    padding-top: 10px;
+    padding-left: 50px;
+}
+/* End of Footer */

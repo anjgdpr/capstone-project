@@ -1,0 +1,39 @@
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/lib-create.css'%}">
+{% endblock %} 
+
+<div class="wrapper">
+        <header>
+            <nav>
+                <div class="logo"><a href="{% url 'lib_index' %}">PLM Library</a></div>
+                <div class="menu">
+                    <ul class="mm">
+                        <li class="mm-links"><a href="{% url 'browse' %}">Browse</a></li>
+                        <li class="mm-links"><a href="{% url 'add' %}">Catalog</a></li>
+                        <div class="user">
+                            <li onclick="toggleMenu()"> {{ user }} &nbsp; <i class="fas fa-caret-down"></i>
+
+                                <div class="dropdown-menu" id="subMenu">
+                                    <ul class="ddmenu">
+                                        <li class="dd-menu">
+                                            <a href="#"><img src="{% static 'image/settings.png'%}">Settings</a>
+                                        </li>
+                            
+
+                                <hr>
+                                        <li class="dd-menu">
+                                            <a href="/books/logout"><img src="{% static 'image/logout.png'%}">Log-out</a>
+                                        </li>
+
+                            </li>
+                    </ul>
+                </div>
+
+                </li>
+    </div>
+    </ul>
+    </div>
+    </nav>
+    </header>
+    <!-- End of Nav Bar -->

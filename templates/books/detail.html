@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/lib-view.css'%}">
+{% endblock %}
+
+{% block accounts %}
+    {% include 'partials/_navbar.html'%}
+{% endblock %}
+
+{% block title %}
+    {{book.book_title}}
+{% endblock %}
+
+{% block content %}
+<div class="back-btn">
+        <a href="javascript:history.back()"><i class="fas fa-arrow-left"> Back </i></a>
+    </div>
+
+    <!-- View -->
+    <div class="section">
+        <div class="imgBox">
+            <img src="/books/media/{{book.book_image}}" alt="bookimage">
+        </div>
+        <div class="text">
+            <h1>Title: {{book.book_title}}</h1>
+            <p>
+                <b>College:</b> {{book.book_college}} <br>
+                <b>Course:</b> {{book.book_course}}  <br>
+                <b>Section:</b> {{book.book_type}}  <br>
+                <b>Author/s:</b> {{book.book_authors}} <br>
+                <b>Compilation Date:</b>  {{book.pub_month}}, {{book.pub_year}}  <br><br>
+            
+
+                <b>Abstract:</b> 
+                {{book.book_abstract}}
+                </p>
+
+                <a class="edit-btn" href="{% url 'edit' book.id %}">Edit</a>
+        </div>
+    </div>
+    <!-- View -->
+    
+    <!-- End of Content -->
+
+{% endblock %}
+{% block footer %}
+    {% include 'partials/_footer.html'%}
+{% endblock %}

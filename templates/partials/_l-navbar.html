@@ -1,0 +1,27 @@
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/lib-create.css'%}">
+{% endblock %} 
+
+<!-- Start of Nav Bar -->
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="logo">PLM Library</div>
+                <div class="menu">
+                    <ul class="mm">
+                        <li class="mm-links"><a href="/books">Home</a></li>
+                        <li class="mm-links"><a href="{% url 'l_browse' %}">Browse</a></li>
+                        <li class="mm-links"><a href="/books/#about-us">About</a></li>
+                        <li class="mm-links"><a href="{% url 'contact' %}">Contact Us</a></li>
+                        <li class="sign-in"><a href="/books/login">Sign In</a></li>
+
+                    </ul>
+                </div>
+                </li>
+    </div>
+    </ul>
+    </div>
+    </nav>
+    </header>
+    <!-- End of Nav Bar -->

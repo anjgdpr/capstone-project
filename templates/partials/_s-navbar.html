@@ -1,0 +1,64 @@
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/st-index.css'%}">
+{% endblock %} 
+
+<!-- Start of Nav Bar -->
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="logo"><a href="{% url 'index' %}">PLM Library</a></div>
+                <div class="menu">
+                    <ul class="mm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        {% if request.user.is_authenticated and request.user.is_student%}
+                        <li class="mm-links"><a href="{% url 's_browse' %}">Browse</a></li>
+                        {% else %}
+                        <li class="mm-links"><a href="{% url 'l_browse' %}">Browse</a></li>
+                        {% endif %}
+                        <li class="mm-links"><a href="/books/#about-us">About</a></li>
+                        <li class="mm-links"><a href="{% url 'contact' %}">Contact Us</a></li>
+                        {% if request.user.is_authenticated and request.user.is_student%}
+                        <div class="user">
+                            <li onclick="toggleMenu()"> {{ user }} &nbsp; <i class="fas fa-caret-down"></i>
+
+                                <div class="dropdown-menu" id="subMenu">
+                                    <ul class="ddmenu">
+                                        <li class="dd-menu">
+                                            <a href="{% url 'favorite_list' %}"><img src="{% static 'image/bookmark.png'%}">Favorites</a>
+                                        </li>
+                            
+
+                                <hr>
+                                        <li class="dd-menu">
+                                            <a href="/books/logout"><img src="{% static 'image/logout.png'%}">Log-out</a>
+                                        </li>
+                            </li>
+                                    </ul>
+                        </div>
+                        
+                        {% else %}
+                        <li class="sign-in"><a href="/books/login">Sign In</a></li>
+                        {% endif %}
+
+                    </ul>
+                </div>
+                </li>
+    </div>
+    </ul>
+    </div>
+    </nav>
+    </header>
+    <!-- End of Nav Bar -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script>
+            $(window).scroll(function(){
+                if($(window).scrollTop()){
+                    $("nav").removeClass("yellow");
+                }
+                else{
+                    $("nav").addClass("yellow");
+                }
+            });
+        </script>
+    <!-- End of Nav Bar -->

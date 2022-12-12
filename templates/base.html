@@ -1,0 +1,249 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% block styles %}
+    {% endblock %}
+    <link rel="shortcut icon" href="{% static 'image/favicon.png' %}" type="image/x-icon"> 
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>PLM Library | {% block title %} {% endblock %}</title>
+  </head>
+  <body onload="initClock()">
+
+    <!-- navbar start -->
+    {% block accounts %}
+    {% endblock %}
+    <!-- end navbar -->
+ {% block content %} 
+ {% endblock %}  
+<br>
+
+<!-- JS for time and date -->
+        <script type="text/javascript">
+            function updateClock(){
+                var now = new Date();
+                var dname = now.getDay(),
+                    mo = now.getMonth(),
+                    dnum = now.getDate(),
+                    yr = now.getFullYear(),
+                    hou = now.getHours(),
+                    min = now.getMinutes(),
+                    sec = now.getSeconds(),
+                    pe = "AM";
+
+                    if(hou == 0){
+                        hou = 12;
+                    }
+                    if(hou > 12){
+                        hou = hou - 12;
+                        pe = "PM";
+                    }
+
+                    Number.prototype.pad = function(digits){
+                        for(var n = this.toString(); n.length < digits; n = 0 + n);
+                        return n;
+                    }
+
+                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                    var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                    var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+                    var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min, sec.pad(2), pe];
+                    for(var i = 0; i < ids.length; i++)
+                    document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+
+
+            }
+
+            function initClock(){
+                updateClock();
+                window.setInterval("updateClock()", 1);
+            }
+        </script>
+        <!-- JS for time and date -->
+ <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <!-- <script>
+            $(window).scroll(function(){
+                if($(window).scrollTop()){
+                    $("nav").removeClass("yellow");
+                }
+                else{
+                    $("nav").addClass("yellow");
+                }
+            });
+        </script> -->
+
+        <!-- JS for Drop Down Menu -->
+        <script>
+            let submenu = document.getElementById("subMenu");
+
+            function toggleMenu() {
+                submenu.classList.toggle("openMenu");
+            }
+        </script>
+        <!-- JS for Drop Down Menu -->
+
+        <!-- JS for Colleges and Courses -->
+        <script>
+            function populate(s1,s2){
+                var s1 = document.getElementById(s1);
+                var s2 = document.getElementById(s2);
+
+                s2.innerHTML = "";
+
+                if(s1.value == "College of Architecture and Urban Planning")
+                {
+                    var optionArray = ['Bachelor of Science in Architecture|Bachelor of Science in Architecture'];
+                }
+
+                else if(s1.value == 'College of Education')
+                {
+                    var optionArray = ['Bachelor of Elementary Education (Generalist)|Bachelor of Elementary Education (Generalist)', 'BECEd|Bachelor of Early Childhood Education', 
+                    'Bachelor of Special Needs Education (Generalist)|Bachelor of Special Needs Education (Generalist)', 
+                    'Bachelor of Secondary Education major in English|Bachelor of Secondary Education major in English', 
+                    'Bachelor of Secondary Education major in Filipino|Bachelor of Secondary Education major in Filipino', 
+                    'Bachelor of Secondary Education major Mathematics|Bachelor of Secondary Education major Mathematics', 
+                    'Bachelor of Secondary Education major in Sciences| Bachelor of Secondary Education major in Sciences',
+                    'Bachelor of Secondary Education major in Social Studies|Bachelor of Secondary Education major in Social Studies', 
+                    'Bachelor of Physical Education|Bachelor of Physical Education', 
+                    'Master of Arts in Education major in Social Sciences|Master of Arts in Education major in Social Sciences', 
+                    'Master of Arts in Special Education major in Developmental Delays|Master of Arts in Special Education major in Developmental Delays', 
+                    'Master of Arts in Education major in Educational Management and Leadership|Master of Arts in Education major in Educational Management and Leadership', 
+                    'Master of Arts in Education major in Biological Sciences| Master of Arts in Education major in Biological Sciences', 'MAEdPhy|Master of Arts in Education major in Physics',
+                    'Master of Arts in Education major in Chemistry|Master of Arts in Education major in Chemistry', 
+                    'Master of Science in Mathematics Education|Master of Science in Mathematics Education', 
+                    'Doctor of Education major in Educational Management and Leadership|Doctor of Education major in Educational Management and Leadership'];
+                }
+
+                else if(s1.value == "College of Engineering and Technology")
+                {
+                    var optionArray = ['Bachelor of Science in Chemical Engineering|Bachelor of Science in Chemical Engineering', 
+                    'Bachelor of Science in Civil Engineering|Bachelor of Science in Civil Engineering', 
+                    'Bachelor of Science in Computer Engineering|Bachelor of Science in Computer Engineering', 
+                    'Bachelor of Science in Computer Science|Bachelor of Science in Computer Science', 
+                    'Bachelor of Science in Electrical Engineering|Bachelor of Science in Electrical Engineering', 
+                    'Bachelor of Science in Electronics Engineering|Bachelor of Science in Electronics Engineering', 
+                    'Bachelor of Science in Information Technology|Bachelor of Science in Information Technology', 
+                    'Bachelor of Science in Manufacturing Engineering|Bachelor of Science in Manufacturing Engineering', 
+                    'Bachelor of Science in Mechanical Engineering|Bachelor of Science in Mechanical Engineering'];
+                }
+
+                else if(s1.value == "College of Humanities, Arts and Social Sciences")
+                {
+                    var optionArray = ['Bachelor of Arts in Communication|Bachelor of Arts in Communication', 
+                    'Bachelor of  Arts in Public Relations|Bachelor of  Arts in Public Relations' , 
+                    'Bachelor of Science in Social Work|Bachelor of Science in Social Work', 
+                    'Bachelor of Music in Music Performance|Bachelor of Music in Music Performance', 
+                    'Master of Arts in Communication Management|Master of Arts in Communication Management'];
+                }
+
+                else if(s1.value == "College of Medicine")
+                {
+                    var optionArray = ['College of Medicine|College of Medicine'];
+                }
+
+                else if(s1.value == "College of Nursing")
+                {
+                    var optionArray = ['Bachelor of Science in Nursing|Bachelor of Science in Nursing'];
+                }
+
+                else if(s1.value == "College of Physical Therapy")
+                {
+                    var optionArray = ['Bachelor of Science in Physical Therapy|Bachelor of Science in Physical Therapy', 
+                    'Master of Science in Physical Therapy|Master of Science in Physical Therapy'];
+                }
+
+                else if(s1.value == "College of Science")
+                {
+                    var optionArray = ['Bachelor of Science in Biology|Bachelor of Science in Biology',
+                     'Bachelor of Science in Chemistry|Bachelor of Science in Chemistry', 
+                     'Bachelor of Science in Mathematics|Bachelor of Science in Mathematics', 
+                     'Bachelor of Science in Psychology|Bachelor of Science in Psychology', 
+                     'Master of Arts in Psychology|Master of Arts in Psychology'];
+                }
+
+                else if(s1.value == "College of Law")
+                {
+                    var optionArray = ['Juris Doctor|Juris Doctor'];
+                }
+
+                else if(s1.value == "Graduate School of Law")
+                {
+                    var optionArray = ['Master of Laws|Master of Laws'];
+                }
+
+                else if(s1.value == "PLM Business School")
+                {
+                    var optionArray = ['Bachelor of Science in Accountancy|Bachelor of Science in Accountancy', 
+                    'Bachelor of Science in Business Administration major in Financial Management|Bachelor of Science in Business Administration major in Financial Management', 
+                    'Bachelor of Science in Business Administration major in Marketing Management|Bachelor of Science in Business Administration major in Marketing Management', 
+                    'Bachelor of Science in Business Administration major in Operations Management|Bachelor of Science in Business Administration major in Operations Management', 
+                    'Bachelor of Science in Business Administration major in Human Resource Management|Bachelor of Science in Business Administration major in Human Resource Management', 
+                    'Bachelor of Science in Business Administration major in Business Economics|Bachelor of Science in Business Administration major in Business Economics', 
+                    'Bachelor of Science in Entrepreneurship|Bachelor of Science in Entrepreneurship ', 
+                    'Bachelor of Science in Real Estate Management|Bachelor of Science in Real Estate Management', 
+                    'Bachelor of Science in Hospitality Management|Bachelor of Science in Hospitality Management', 
+                    'Bachelor of Science in Tourism Management|Bachelor of Science in Tourism Management', 
+                    'Master in Business Administration|Master in Business Administration', 
+                    'Doctor of Business Administration|Doctor of Business Administration'];
+                }
+
+                else if(s1.value == "School of Government")
+                {
+                    var optionArray = ['Professionalization Program for Public Procurement|Professionalization Program for Public Procurement', 
+                    'Master in Government Management|Master in Government Management', 
+                    'Doctor of Government Management|Doctor of Government Management'];
+                }
+
+                else if(s1.value == "SPH")
+                {
+                    var optionArray = ['Certificate in Public Health|Certificate in Public Health', 
+                    'Master of Public Health|Master of Public Health', 
+                    'Public Health Learning Series|Public Health Learning Series'];
+                }
+
+                for(var option in optionArray)
+                {
+                    var pair = optionArray[option].split("|");
+                    var newoption = document.createElement("option");
+
+                    newoption.value = pair[0];
+                    newoption.innerHTML=pair[1];
+                    s2.options.add(newoption);
+                }
+            }
+        </script>
+
+         <!-- JS for Colleges and Courses -->
+
+        <script>
+            var indexValue = 1;
+            showImg(indexValue);
+            function btm_slide(e) { showImg(indexValue = e); }
+            function side_slide(e) { showImg(indexValue += e); }
+            function showImg(e) {
+                var i;
+                const pics = document.getElementsByClassName('photos');
+                const sliders = document.querySelectorAll('.btm-sliders span');
+                if (e > pics.length) { indexValue = 1 }
+                if (e < 1) { indexValue = pics.length }
+                for (i = 0; i < pics.length; i++) {
+                    pics[i].style.display = "none";
+                }
+                for (i = 0; i < sliders.length; i++) {
+                    sliders[i].style.background = "rgba(255,255,255,0.1)";
+                }
+                pics[indexValue - 1].style.display = "block";
+                sliders[indexValue - 1].style.background = "white";
+            }
+        </script>
+        <br><br>
+    {% block footer %}
+    {% endblock %}
+    
+  </body>
+</html>

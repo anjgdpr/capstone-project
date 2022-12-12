@@ -1,0 +1,195 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/lib-edit.css'%}">
+{% endblock %}
+
+{% block accounts %}
+    {% include 'partials/_navbar.html'%}
+{% endblock %}
+
+{% block title %}
+    Edit {{ book.book_title }}
+{% endblock %}
+
+{% block content %}
+<!-- Start of content -->
+<section>
+    <div class="container">
+    
+        <!-- Start of Title Information -->
+        <div class="header">
+            <h1>Title Information</h1>
+            <br><br>
+        </div>
+    
+        <form id="add-new" action="{% url 'processedit' book.id%}" method="post" enctype="multipart/form-data"> 
+        {% csrf_token %}
+            <div class="create-book">
+                <!-- Book Cover -->
+                <div class="img-box">
+                    <img src="/books/media/{{book.book_image}}" alt="bookimage">
+                        <div class="form-group"> 
+                        <button id="upload-img" class="upload-img">Upload Image
+                        <input type="file" name="image" id="image" accept="image">
+                        </button>
+                        </div>
+                    
+                </div>
+                <!-- Book Cover -->
+                
+                <table>
+                    <tr>
+                        <td>
+                            <label>Title</label>
+                        </td>
+                        <td colspan="2">
+                            <div class="form-group"> 
+                            <input class="txt-field" type="text" name="title" type="text" id="title" required value="{{ book.book_title }}" class="form-control">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Author/s</label>
+                        </td>
+                        <td colspan="2">
+                            <div class="form-group"> 
+                            <input class="auth-field" name="author" type="text" required value="{{ book.book_authors }}" class="form-control">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Compilation Date</label>
+                        </td>
+                        <td>
+                            <div class="form-group"> 
+                                <select class="select-field" name="Month" id="month" class="form-control">
+                                    <option value="{{book.pub_month}}">{{book.pub_month}}</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group"> 
+                                <select class="select-field" name="Year" id="year" class="form-control">
+                                    <option value="{{book.pub_year}}"> {{book.pub_year}} </option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                </select>
+                            </div> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Section</label>
+                        </td>
+                        <td colspan="2">
+                            <div class="form-group"> 
+                                <select class="select-field" name="Type" id="Type" class="form-control" required value="{{ book.book_type }}">
+                                    <option value="{{book.book_type}}">{{book.book_type}}</option>
+                                    <option value="Undergraduate">Undergraduate</option>
+                                    <option value="Health Sciences">Health Sciences</option>
+                                    <option value="Graduate School">Graduate School</option>
+                                  </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Colleges</label>
+                        </td>
+                        <td colspan="2">
+                            <div class="form-group"> 
+                                <select class="txt-field" name="slct1" id="slct1" class="custom-select"  class="form-control" required value="{{ book.book_college }}" onchange="populate(this.id, 'slct2')">
+                                    <option value="{{book.book_college}}">{{book.book_college}}</option>
+                                    <option value="College of Architecture and Urban Planning">College of Architecture and Urban Planning</option>
+                                    <option value="College of Education">College of Education</option>
+                                    <option value="College of Engineering and Technology">College of Engineering and Technology</option>
+                                    <option value="College of Humanities, Arts and Social Sciences">College of Humanities, Arts and Social Sciences</option>
+                                    <option value="College of Medicine">College of Medicine</option>
+                                    <option value="College of Nursing">College of Nursing</option>
+                                    <option value="College of Physical Therapy">College of Physical Therapy</option>
+                                    <option value="College of Science">College of Science</option>
+                                    <option value="College of Law">College of Law</option>
+                                    <option value="Graduate School of Law">Graduate School of Law</option>
+                                    <option value="PLM Business School">PLM Business School</option>
+                                    <option value="School of Government">School of Government</option>
+                                    <option value="School of Public Health">School of Public Health</option>
+                                  </select>
+                            </div> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Courses</label>
+                        </td>
+                        <td colspan="2">
+                            <div class="form-group"> 
+                                <select class="txt-field" name="slct2" id="slct2" class="custom-select" class="form-control" required value="{{ book.book_course }}">
+                                    <option value="{{book.book_course}}">{{book.book_course}}</option>
+                                  </select>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <!-- End of Title Information -->
+
+            <!-- Start of Description -->
+            <div class="desc">
+                <h1>Description</h1>
+                <br><br>
+                <div class="desc-type">
+                    <label>Type</label>
+                    <select class="select-field" name="dType" id="dType">
+                        <option value="abstract">Abstract</option>
+                        <option value="GO">General Overview</option>
+                        <option value="ES">Executive Summary</option>
+                      </select>
+                </div>
+                <br><br>
+                <div class="form-group">
+                <div class="textArea" class="form-control">
+                    <textarea id="txtArea" name="txtArea">
+                        {{book.book_abstract}}
+                    </textarea>
+                </div> 
+                </div>
+            </div>
+
+            <br>
+            <!-- End of Description -->
+
+            <!-- Start of buttons -->
+            <div class="btns">
+                <button id="cancel" class="cancel"> <a href="{% url 'browse' %}">Cancel</a></button>
+                <button id="save" class="save">Save Changes</button>
+            </div>
+            <!-- Start of buttons -->
+        </form>
+    </div>
+</section>
+<br><br><br><br><br>
+{% endblock %}
+{% block footer %}
+    {% include 'partials/_footer.html'%}
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/l-browse.css'%}">
+{% endblock %}
+
+{% block accounts %}
+    {% include 'partials/_l-navbar.html'%}
+{% endblock %}
+
+{% block title %} 
+    Log-In Required
+{% endblock %} 
+
+{% block content%}
+
+<!-- Start of content -->
+    <div class="home">
+        <div class="text">
+            <h1>PLM’s notable <br>
+                studies in the palm of <br>
+                your hands.</h1> <br>
+            <div class="desc">
+                <p>Browse through Pamantasan ng Lungsod <br>
+                     ng Maynila’s research studies with PLM <br>
+                     Library Search! Sign In
+                    to start browsing. <br>
+                     Don’t have an account? Sign up, It’s free!
+                </p>
+
+                <br>
+                
+                <a href="{% url 'register' %}"><button class="reg">Register here </a></button>
+
+                <br><br>
+
+                <p>Already have an account? Sign in <a href="{% url 'loginview' %}" class="apt-link"><u>here</u></a>.</p>
+            </div>
+        </div>
+
+        <!-- Start of Slider -->
+        <div class="slider-container">
+            <div class="welcome-card">
+                <img src="{% static 'image/1.png'%}">
+                <img src="{% static 'image/2.png'%}">
+                <img src="{% static 'image/3.png'%}">
+                <img src="{% static 'image/4.png'%}">
+            </div>
+        </div>
+    </div>
+    <!-- End of Slider -->
+
+    <!-- End of Content -->
+
+
+
+
+{% endblock %}
+{% block footer %}
+    {% include 'partials/_footer.html'%}
+{% endblock %}

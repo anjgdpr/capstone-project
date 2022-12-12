@@ -1,0 +1,136 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/s_browse.css'%}">
+{% endblock %}
+
+{% block accounts %}
+    {% include 'partials/_u-navbar.html'%}
+{% endblock %}
+
+{% block title %} 
+    Browse
+{% endblock %} 
+
+{% block content %}
+
+<body onload="initClock()">
+    <!-- Start of Content -->
+
+    <!-- Side Menu START -->
+    <div class="side-navbar">
+        <h4>Filter Content</h4>
+
+        <br><br>
+
+        <form action="{% url 'filterview'%}" method="GET">
+            <label>Year</label> &nbsp; &nbsp; 
+                <select class="slct-field" name="sortb" id="sortb" class="form-control">
+                    <option value="Year">Year</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                </select>
+
+                <br><br>
+
+                <label>College</label>
+                <select class="slct-field" name="slct1" id="slct1" class="custom-select" onchange="populate(this.id, 'slct2')" class="form-control">
+                    <option value="" disabled selected hidden>Colleges</option>
+                    <option value="College of Architecture and Urban Planning">College of Architecture and Urban Planning</option>
+                    <option value="College of Education">College of Education</option>
+                    <option value="College of Engineering and Technology">College of Engineering and Technology</option>
+                    <option value="College of Humanities, Arts and Social Sciences">College of Humanities, Arts and Social Sciences</option>
+                    <option value="College of Medicine">College of Medicine</option>
+                    <option value="College of Nursing">College of Nursing</option>
+                    <option value="College of Physical Therapy">College of Physical Therapy</option>
+                    <option value="College of Science">College of Science</option>
+                    <option value="College of Law">College of Law</option>
+                    <option value="Graduate School of Law">Graduate School of Law</option>
+                    <option value="PLM Business School">PLM Business School</option>
+                    <option value="School of Government">School of Government</option>
+                    <option value="School of Public Health">School of Public Health</option>
+                </select>
+
+                <br><br>
+
+                <label>Course</label>
+                <select class="slct-field" name="slct2" id="slct2" class="custom-select" class="form-control">
+                </select>
+                <br><br>
+
+                <label>Section</label>
+                <select class="slct-field" name="Type" id="type" class="form-control">
+                    <option value="Section">Section</option>
+                    <option value="Undergraduate">Undergraduate</option>
+                    <option value="Health Sciences">Health Sciences</option>
+                    <option value="Graduate School">Graduate School</option>
+                  </select>
+                  <br><br> 
+                
+                <label> Filter </label>
+                <input type="submit" value="Go" class="submit-btn" name="submit">
+        </form>
+    </div>
+    <!-- Side Menu END -->
+
+    <!-- Search Box -->
+    <div class="search-box">
+        <img src="{% static 'image/book.png' %}">
+        <form action="{% url 's_search'%}" method="GET">
+        <input class="search-txt" type="text" name="search" placeholder="Search anything..." class="form-control">
+        <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button><br> 
+    </div>
+    <!-- Search Box -->
+    <!-- Books -->
+    <div class="cards">
+        {% for book in page_obj %}
+        <div class="card">
+            <a href="{% url 's_detail' book.id %}"> 
+            <img src="media/{{ book.book_image }}" alt="bookimage" class="card-img"><br>
+            <div class="card-content">
+                <b>Title:</b> {{ book.book_title }}</a> <br> 
+                <b>Year: </b>{{ book.pub_year }}<br>
+                <b>Abstract: </b>{{ book.book_abstract|truncatechars:100 }}<br>
+            </div>
+            <div class="addtl-info">
+                <div>
+                    <i class="fa-solid fa-eye"></i> Views
+                </div>
+            </div>
+        </div>
+        {% endfor %} 
+        </div>
+    <div class="pagination">
+        {% load my_tags %}
+            <span class="step-links">
+            <br><br>
+              {% if page_obj.has_previous %}
+                <a href="?{% param_replace page=1 %}">&laquo; first</a>
+                {% if page_obj.previous_page_number != 1 %}
+                <a href="?{% param_replace page=page_obj.previous_page_number %}">previous</a>
+                {% endif %}
+            {% endif %}
+
+                <span class="current">
+                    Page {{ page_obj.number }} of {{page_obj.paginator.num_pages }}
+                </span>
+
+              {% if page_obj.has_next %}
+                {% if page_obj.next_page_number != paginator.num_pages %}
+                  <a href="?{% param_replace page=page_obj.next_page_number %}"><u>next</u></a>
+                {% endif %}
+                  <a href="?{% param_replace page=page_obj.paginator.num_pages %}"><u>last &raquo;</u></a>
+              {% endif %}
+            </span>
+            </div>
+    <!-- Books -->
+    <!-- End of Content -->
+{% endblock %}
+{% block footer %}
+    {% include 'partials/_footer.html'%}
+{% endblock %}

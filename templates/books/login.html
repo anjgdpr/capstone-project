@@ -1,0 +1,65 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/login.css'%}">
+{% endblock %}
+
+{% block title %} 
+    Login 
+{% endblock %} 
+
+
+{% block content %}
+
+<div class="wrapper">
+            <header>
+                <nav>
+                    <div class="logo"><a href="/books">PLM Library</a></div>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="bg-gradient"></div>
+
+            <!-- Log In Box -->
+            <div class="content">
+
+                <div class="center">
+                    <div class="head">
+                        <div class="signup_link">
+                            <a href="/books/signup">I don't have an account.</a>
+                        </div>
+                        <h1>Sign-In</h1>
+    
+                    </div>
+
+                    <form action="{% url 'processlogin'%}" method="post">
+                        {% csrf_token %}
+                        <div class="text_field">
+                            <label>Username:</label>
+                            <br>
+                            {{ form.username }}
+                        </div>
+                        <div class="text_field">
+                            <label>Password:</label>
+                            <br>
+                            {{ form.password }}
+                             {% if error_message %}
+                            <p class="error"> {{error_message}} </p>
+                            {% endif %}
+                        </div>
+                        <div class="foot">
+                            <input type="submit" name="Login" value="Sign In">
+                            <br>
+                            <a href="#">Can't sign in?</a>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+{% endblock %}
