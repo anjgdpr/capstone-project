@@ -8,11 +8,13 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth import authenticate, logout, login
 from django.contrib.auth.decorators import login_required
 from .forms import SignUpForm, LoginForm
-import __main__, os 
+import __main__, os
+import joblib
 import pickle 
 import pandas as pd 
 from django.templatetags.static import static
 from django.views.decorators.csrf import csrf_exempt
+import streamlit as st 
 
 
 def index (request): 
@@ -99,31 +101,34 @@ def detail(request, book_id):
     return render(request, 'books/detail.html', {'book':book})
 
 def s_detail(request, book_id): #student paper detail
-    #cosine_sim = pickle.load(open('cosine_sim-v5.pkl','rb'))
-    #workpath = 'C:/Users/angel/Desktop/libraryapp'
-    #data = open(os.path.join(workpath, 'try.csv'), 'rb')
-    #data = pd.read_csv(data)
-    #data = pd.read_csv('try.csv', sep=',', encoding='utf-8')
+    cosine_sim = joblib.load('cosine_sim-v5.pkl')
+    #path = os.path.join(os.path.dirname(__file__), 'try.csv')
+    #data = pd.read_csv(path)
+    data = pd.read_csv('try.csv', sep=',', encoding='utf-8')
     try:
         book = Book.objects.get(pk=book_id)
         fav = True 
         if book.favorites.filter(id=request.user.id).exists():
             fav=False
     
-        #def recommendations(book_id,n, cosine_sim = cosine_sim):
-            #recommended_books = []
-            #idx = data.loc[data['book_id'] == book_id].index[0]
-            #score_series = pd.Series(cosine_sim[idx]).sort_values(ascending = False)
-            #top_n_indexes = list(score_series.iloc[1:n+1].index)
-            #for i in top_n_indexes:
-                #recommended_books.append(list(data.index)[i]) # ['Title']
-                #print(top_n_indexes)
-            #return recommended_books
-        #book_id = Book.objects.get(pk=book_id)
-        #recommend = recommendations(book_id, 3)
+        def recommendations(book_id,n, cosine_sim = cosine_sim):
+            recommended_books = []
+            recommended_id = []
+            idx = book_id
+            score_series = pd.Series(cosine_sim[idx]).sort_values(ascending = False)
+            top_n_indexes = list(score_series.iloc[1:n+1].index)
+            for i in top_n_indexes:
+                recommended_books.append(list(data['Title'])[i]) # ['Title']
+                for n in top_n_indexes: 
+                    recommended_id.append(list(data.index)[n]) # ['Title']
+                print(book_id)
+                print(top_n_indexes)
+            return recommended_books
+        book = Book.objects.get(pk=book_id)
+        recommend = recommendations(book_id, 3)
     except Book.DoesNotExist: 
         raise Http404("Title does not exist")    
-    return render (request, 'books/s_detail.html', {'book':book, 'fav':fav}) #, 'recommend':recommend
+    return render (request, 'books/s_detail.html', {'book':book, 'fav':fav, 'recommend':recommend}) #
 
 
 #def recommend(request, book_id): 
@@ -298,6 +303,7 @@ def libfilterview(request): #admin filter
         
     context = {
         'page_obj': qs,
+        
     }
     return render(request, 'books/browse.html', context)
 
