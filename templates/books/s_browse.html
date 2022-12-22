@@ -1,7 +1,6 @@
 {% extends 'base.html' %} 
 
 {% load static %}
-
 {% block styles %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/s_browse.css'%}">
 {% endblock %}
@@ -21,9 +20,7 @@
 
     <!-- Side Menu START -->
     <div class="side-navbar">
-        <h4>Filter Content</h4>
-
-        <br><br>
+        <h4>Filter Content</h4><br>
 
         <form action="{% url 'filterview'%}" method="GET">
             <label>Year</label> &nbsp; &nbsp; 
@@ -75,6 +72,24 @@
                 <label> Filter </label>
                 <input type="submit" value="Go" class="submit-btn" name="submit">
         </form>
+        <br> 
+        <!-- View option in sidebar START-->
+        <div class="listgrid">
+            <div class="views">
+                <p>View by:</p>
+                <ul>
+                    <li class="li-grid active" data-view="grid-view">
+                        Grid View</li>
+
+                    &nbsp;
+
+                    <li class="li-list" data-view="list-view">
+                        List View</li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- View option in sidebar END -->
     </div>
     <!-- Side Menu END -->
 
@@ -108,7 +123,7 @@
     <div class="pagination">
         {% load my_tags %}
             <span class="step-links">
-            <br><br>
+            
               {% if page_obj.has_previous %}
                 <a href="?{% param_replace page=1 %}">&laquo; first</a>
                 {% if page_obj.previous_page_number != 1 %}

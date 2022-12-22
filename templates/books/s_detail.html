@@ -66,13 +66,14 @@
  {% endfor %}-->
  <h2><u>Browse Similar Papers:</u></h2><br>
  <div class="flex">
-    {% for i in recommend %}
+    {% for book in new%}
     <div class="card">
-        <img src="{%static 'image/image.jpg'%}"><br>
+        <a href="{% url 's_detail' book.id %}">
+        <img src="/books/media/{{book.book_image}}" alt="bookimage"></a><br>
         <div class="browse-content">
-            <b>Title:</b><a href="{% static '/books/{{n}}/s_detail/'%}"> {{i}}</a> <br>
-                    <!--<b>Year:</b><br>
-                    <b>Abstract:</b> <br>--><br>
+            <b>Title:</b> <a href="{% url 's_detail' book.id %}"> {{book.book_title}} </a><br>
+            <b>College:</b> {{book.book_college}} <br>
+            <b>Course:</b> {{book.book_course}}  <br>
             <div class="eye">
                 <i class="fa-solid fa-eye"></i> Views
             </div>

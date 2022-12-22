@@ -90,7 +90,6 @@ a:visited {
 .user{
     display: inline-block;
     padding: 20px;
-    float: right;
     color:#000;
 }
 
@@ -327,6 +326,28 @@ button {
     width: 70px;
     border: none;
     cursor: pointer;
+}
+
+.listgrid .views ul{
+    display: flex;
+    list-style: none;
+}
+
+.listgrid .views ul li{
+    padding: 5px 5px 5px 5px;
+}
+
+.listgrid .views ul li:hover{
+    background-color: #FFEA5A;
+    transition: 0.3s;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+
+.listgrid .views ul li.active{
+    background-color: #FFEA5A;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
 }
 /* Side nav bar END */
 
