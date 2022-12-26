@@ -22,24 +22,47 @@
         <p>View or remove papers from your list here.</p>
     </div>
     <div class="cards">
-        {% for book in new %}
+        {% for book in page_obj %}
         <div class="card">
             <a href="{% url 's_detail' book.id %}">
              <img src="media/{{ book.book_image }}" alt="bookimage" class="card-img">
             <div class="card-content">
-                <b>Title: </b> {{ book.book_title }}<br>
+                <b>Title: </b> {{ book.book_title|truncatechars:50 }}<br>
                 <b>Year: </b> {{ book.pub_year }}<br>
                 <b>Abstract:</b> {{ book.book_abstract|truncatechars:100 }}<br>
             </div>
             <div class="addtl-info">
                 <div>
-                    <a style="color: #000000;" href="{% url 'favorite_add' book.id %}"> Remove</a>
+                    <a style="color: red;" href="{% url 'favorite_add' book.id %}"> Remove</a>
                 </div>
             </div>
         </div>
         {% endfor %} 
 </div>
 
+<div class="pagination">
+        {% load my_tags %}
+            <span class="step-links">
+            
+              {% if page_obj.has_previous %}
+                <a href="?{% param_replace page=1 %}">&laquo; first</a>
+                {% if page_obj.previous_page_number != 1 %}
+                <a href="?{% param_replace page=page_obj.previous_page_number %}">previous</a>
+                {% endif %}
+            {% endif %}
+
+                <span class="current">
+                    Page {{ page_obj.number }} of {{page_obj.paginator.num_pages }}
+                </span>
+
+              {% if page_obj.has_next %}
+                {% if page_obj.next_page_number != paginator.num_pages %}
+                  <a href="?{% param_replace page=page_obj.next_page_number %}"><u>next</u></a>
+                {% endif %}
+                  <a href="?{% param_replace page=page_obj.paginator.num_pages %}"><u>last &raquo;</u></a>
+              {% endif %}
+            </span>
+            </div>
 {% endblock %}
 {% block footer %}
     {% include 'partials/_footer.html'%}

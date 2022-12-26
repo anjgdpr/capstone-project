@@ -108,7 +108,7 @@
             <a href="{% url 's_detail' book.id %}"> 
             <img src="media/{{ book.book_image }}" alt="bookimage" class="card-img"><br>
             <div class="card-content">
-                <b>Title:</b> {{ book.book_title }}</a> <br> 
+                <b>Title:</b> {{ book.book_title|truncatechars:60 }}</a> <br> 
                 <b>Year: </b>{{ book.pub_year }}<br>
                 <b>Abstract: </b>{{ book.book_abstract|truncatechars:100 }}<br>
             </div>

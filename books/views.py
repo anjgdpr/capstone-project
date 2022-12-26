@@ -297,7 +297,10 @@ def favorite_add(request, id):
 
 def favorite_list(request): #favorites page
     new = Book.objects.filter(favorites=request.user)
-    return render(request,'books/favorites.html',{'new': new})
+    paginator = Paginator(new, 9)
+    page_number = request.GET.get('page')
+    book_list = paginator.get_page(page_number)
+    return render(request,'books/favorites.html',{'new': new, 'page_obj': book_list})
 
 
 
