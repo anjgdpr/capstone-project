@@ -2,6 +2,8 @@ from django.urls import path
 from django.conf import settings
 from . import views 
 from django.conf.urls.static import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 
 App_name = 'books'
 urlpatterns = [
@@ -29,4 +31,7 @@ urlpatterns = [
     path('fav/<int:id>/', views.favorite_add, name='favorite_add'),
     path('favorites', views.favorite_list, name='favorite_list'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+urlpatterns += staticfiles_urlpatterns()
+
     
