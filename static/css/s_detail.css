@@ -80,6 +80,7 @@ header{
 }
 
 .sign-in{
+    float: right;
     display: inline-block;
     margin-top: 20px;
     margin-right: 20px;
@@ -318,3 +319,7 @@ header{
     padding-left: 50px;
 }
 /* End of Footer */
+
+.button { 
+    background-color: #0D6AE4;
+}

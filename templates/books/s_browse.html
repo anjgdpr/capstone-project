@@ -157,9 +157,9 @@
             <span class="step-links">
             
               {% if page_obj.has_previous %}
-                <a href="?{% param_replace page=1 %}">&laquo; first</a>
+                <a href="?{% param_replace page=1 %}">&laquo; <u>first</u></a>
                 {% if page_obj.previous_page_number != 1 %}
-                <a href="?{% param_replace page=page_obj.previous_page_number %}">previous</a>
+                <a href="?{% param_replace page=page_obj.previous_page_number %}"><u>previous</u></a>
                 {% endif %}
             {% endif %}
 

@@ -101,6 +101,105 @@ header{
 
 /* End of Nav Bar */
 
+/*filters*/ 
+.listgrid { 
+    margin-left: 10px;
+}
+.listgrid .views ul{
+    display: flex;
+    list-style: none;
+}
+
+.listgrid .views ul li{
+    padding: 5px 5px 5px 5px;
+}
+
+.listgrid .views ul li:hover{
+    background-color: #FFEA5A;
+    box-shadow: 0 5px 15px #888888;
+    transition: 0.3s;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.listgrid .views ul li.active{
+    background-color: #FFEA5A;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+/*form*/ 
+.form {
+    margin-left: 30px;
+    float: left;
+}
+.slct-field{
+    border-radius: 2px;
+    width: 130px;
+    height: 30px;
+    /*box-shadow: 0 5px 15px #888888;*/
+}
+
+.submit-btn{
+    background-color: #FFEA5A;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    box-shadow: 0 5px 15px #888888;
+}
+/*end form*/
+/* Search Box */
+.search-box{
+    margin-left: 30px;
+    /* dito sa 2 lines above iaadjust placement ng search container */
+}
+
+.search-box a{
+    margin-left: 10px;
+    color: #000;
+}
+
+.search-box a i{
+    background-color: #FFEA5A;
+    padding: 16px 16px 16px 16px;
+    border-radius: 10px;
+}
+
+.search-box a i:hover{
+    box-shadow: 0 5px 15px #888888;
+    transition: 0.3s;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+.search-btn i{
+    background-color: #FFEA5A;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.search-btn i:hover{
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    transition: 0.3s;
+}
+
+
+.search-txt{
+    width: 300px;
+    height: 30px;
+    padding: 10px 10px 10px 10px;
+}
+/*search end*/
+/*filters end*/
+
+
 /* Start of Content */
 /* Books */
 .pghead{
@@ -109,7 +208,7 @@ header{
 }
 
 .cards{
-    margin: 50px 50px 50px 150px;
+    margin: 50px 50px 50px 180px;
     /* width: 900px; */
     max-width: 1000px;
     display: grid;
@@ -141,7 +240,34 @@ header{
     font-size: 0.8em;
     float: right;
 }
+
+/* List */
+.view_item img{
+    height: 200px;
+    width: 150px;
+}
+
+.view_item{
+    max-width: 1000px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    margin: 20px 50px 20px 200px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+}
+
+.vi_left{
+    padding-right: 30px;
+}
+/* List */
 /* Books */
+
+.pagination { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* End of Content */
 

@@ -296,11 +296,42 @@ def favorite_add(request, id):
     return HttpResponseRedirect(request.META['HTTP_REFERER'], {'fav':fav})
 
 def favorite_list(request): #favorites page
-    new = Book.objects.filter(favorites=request.user)
-    paginator = Paginator(new, 9)
+    qs = Book.objects.filter(favorites=request.user)
+    paginator = Paginator(qs, 9)
     page_number = request.GET.get('page')
     book_list = paginator.get_page(page_number)
-    return render(request,'books/favorites.html',{'new': new, 'page_obj': book_list})
+    return render(request,'books/favorites.html',{'qs': qs, 'page_obj': book_list})
 
+@csrf_exempt
+def filterfav(request): #student filter 
+    qs = Book.objects.filter(favorites=request.user)
+    sort_by = request.GET.get('sortb')
+    
+    if sort_by == 'added': 
+        qs = qs.order_by('-favorites')
+    elif sort_by == 'year': 
+        qs = qs.order_by('pub_year')
+    elif sort_by == 'title': 
+        qs = qs.order_by('book_title')
+    elif sort_by == 'college': 
+        qs = qs.order_by('book_college')
+        
+    paginator = Paginator(qs, 9)
+    page_number = request.GET.get('page')
+    qs = paginator.get_page(page_number)
+        
+    context = {
+        'page_obj': qs,
+        
+    }
+    return render(request, 'books/favorites.html', context)
+    
 
-
+def searchfav (request): #lookup for favorites list
+    term = request.GET.get('search', '')
+    qs = Book.objects.filter(favorites=request.user).filter( Q (book_title__icontains=term) | Q (book_authors__icontains=term) | Q (pub_year__icontains=term) | Q (book_college__icontains=term)  | Q (book_course__icontains=term) | Q (book_abstract__icontains=term)).order_by('-pub_year')
+    
+    paginator = Paginator(qs, 9)
+    page_number = request.GET.get('page')
+    qs = paginator.get_page(page_number)
+    return render(request, 'books/favorites.html', {'page_obj': qs})

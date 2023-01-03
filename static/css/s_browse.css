@@ -90,7 +90,6 @@ a:visited {
 .user{
     display: inline-block;
     padding: 20px;
-    float: right;
     color:#000;
 }
 
@@ -328,9 +327,35 @@ button {
     border: none;
     cursor: pointer;
 }
+
+.listgrid .views ul{
+    display: flex;
+    list-style: none;
+}
+
+.listgrid .views ul li{
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.listgrid .views ul li:hover{
+    background-color: #FFEA5A;
+    transition: 0.3s;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.listgrid .views ul li.active{
+    background-color: #FFEA5A;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 /* Side nav bar END */
 
 /* Books */
+/* Grid */
 .cards{
     margin: 50px 0 50px 280px;
     /* width: 900px; */
@@ -364,7 +389,29 @@ button {
     font-size: 0.8em;
     float: right;
 }
+/* Grid */
+
+/* List */
+.view_item img{
+    height: 200px;
+    width: 150px;
+}
+
+.view_item{
+    max-width: 1000px;
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    margin: 20px 50px 20px 280px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+}
+
+.vi_left{
+    padding-right: 30px;
+}
+/* List */
 /* Books */
+
 
 .pagination { 
     width: 100%;

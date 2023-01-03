@@ -19,35 +19,111 @@
 <div class="pghead">
         <h1>{{user}}'s Favorites List</h1>
         <hr style="width: 410px; color: #FFEA5A; weight: 3em;">
-        <p>View or remove papers from your list here.</p>
+        <!--<p>View or remove papers from your list here.</p>-->
+</div>
+<!-- filters -->
+<div style="width: 1024px; margin-left:150px;">
+<!--form start-->
+    <div class="form" style="float: left;">
+    <form action="{% url 'filterfav'%}" method="GET">
+        <label>Sort By:</label> &nbsp;
+            <select class="slct-field" name="sortb" id="sortb" class="form-control">
+                <option value="added"> </option>
+                <option value="year">Year</option>
+                <option value="title">Title</option>
+                <option value="college">College</option>
+            </select>
+        <label></label>
+            <input type="submit" value="Filter" class="submit-btn" name="submit">
+    </form>
     </div>
-    <div class="cards">
-        {% for book in page_obj %}
-        <div class="card">
-            <a href="{% url 's_detail' book.id %}">
-             <img src="media/{{ book.book_image }}" alt="bookimage" class="card-img">
-            <div class="card-content">
-                <b>Title: </b> {{ book.book_title|truncatechars:50 }}<br>
-                <b>Year: </b> {{ book.pub_year }}<br>
-                <b>Abstract:</b> {{ book.book_abstract|truncatechars:100 }}<br>
-            </div>
-            <div class="addtl-info">
-                <div>
-                    <a style="color: red;" href="{% url 'favorite_add' book.id %}"> Remove</a>
+<!--form end-->
+<!-- Search Box -->
+    <div class="search-box" style="float: left;">
+        <!--<img src="{% static 'image/book.png' %}">-->
+        <form action="{% url 'searchfav'%}" method="GET">
+        <input class="search-txt" type="text" name="search" placeholder="Search anything..." class="form-control">
+        <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View By:
+    </div>
+<!-- Search Box -->
+<!-- view by start -->
+<!--toggle-->
+    <div class="listgrid" style="float: left;">
+                <div class="views">
+                    
+                    <ul>
+                        <li class="li-grid active" data-view="grid-view">
+                            Grid View</li>
+
+                        &nbsp;
+
+                        <li class="li-list" data-view="list-view">
+                            List View</li>
+
+                    </ul>
                 </div>
+    </div>
+<!--toggle end -->
+</div>
+<!--filters end-->
+
+<!-- With list  & grid js START -->
+    <div class="view_main">
+        <div class="view_wrap grid-view" style="display: block;">
+            <div class="cards">
+                {% for book in page_obj %}
+                <div class="card">
+                    <a href="{% url 's_detail' book.id %}"> 
+                    <img src="media/{{ book.book_image }}" alt="bookimage" class="card-img"> </a>
+                    <div class="card-content">
+                        <b>Title:</b> {{ book.book_title|truncatechars:60 }}<br>
+                        <b>Year:</b> {{ book.pub_year }}<br>
+                        <b>Abstract:</b> {{ book.book_abstract|truncatechars:100 }}<br>
+                    </div>
+                    <div class="addtl-info">
+                        <div>
+                            <i class="fa-solid fa-eye"></i> Views
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
             </div>
         </div>
-        {% endfor %} 
-</div>
+        <!-- end ng grid -->
+        <div class="view_wrap list-view" style="display:none;">
+            {% for book in page_obj %}
+            <div class="view_item">
+                <div class="vi_left">
+                    <a href="{% url 's_detail' book.id %}"> 
+                    <img src="media/{{ book.book_image }}" alt="bookimage" class="card-img"> </a>
+                </div>
+                <div class="vi_right">
+                    <p><b>Title:</b> {{ book.book_title }} 
+                    <br><b>Year:</b> {{ book.pub_year }}
+                    <br><b>Course:</b> {{ book.book_course }}
+                    <br><b>Abstract: </b> {{ book.book_abstract|truncatechars:250 }}
+                    </p>
+                    <div class="addtl-info">
+                        <div>
+                            <i class="fa-solid fa-eye"></i> Views
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <!--end ng list-->
+    </div>
+    <!-- With list & grid JS END -->
 
 <div class="pagination">
         {% load my_tags %}
             <span class="step-links">
             
               {% if page_obj.has_previous %}
-                <a href="?{% param_replace page=1 %}">&laquo; first</a>
+                <a href="?{% param_replace page=1 %}">&laquo; <u>first</u></a>
                 {% if page_obj.previous_page_number != 1 %}
-                <a href="?{% param_replace page=page_obj.previous_page_number %}">previous</a>
+                <a href="?{% param_replace page=page_obj.previous_page_number %}"><u>previous</u></a>
                 {% endif %}
             {% endif %}
 
