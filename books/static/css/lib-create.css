@@ -165,7 +165,7 @@ a:visited {
 .dropdown-menu.openMenu{
     max-height: 250px;
     background-color: #FFF;
-    width: 400px;
+    width: 120px;
     opacity: 1;
      border: 1px solid #D9D9D9;
 }

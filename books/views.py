@@ -13,7 +13,10 @@ import joblib
 import pandas as pd 
 from django.templatetags.static import static
 from django.views.decorators.csrf import csrf_exempt
+from django.utils import timezone
+import datetime
 
+now = datetime.datetime.now()
 
 
 def index (request): 
@@ -220,19 +223,20 @@ def filterview(request): #student filter
     college = request.GET.get('slct1')
     course = request.GET.get('slct2')
     section = request.GET.get('Type')
+    YEAR = datetime.datetime.now().year
     
     if sort_by == 'Year': 
         qs = qs.order_by('-pub_year')
     elif sort_by == '2017': 
-        qs = Book.objects.filter ( Q (pub_year__icontains=2017) )
+        qs = Book.objects.filter (pub_year=YEAR-6 )
     elif sort_by == '2018': 
-        qs = Book.objects.filter ( Q (pub_year__icontains=2018) )
+        qs = Book.objects.filter (pub_year=YEAR-5 )
     elif sort_by == '2019': 
-        qs = Book.objects.filter ( Q (pub_year__icontains=2019) )
+        qs = Book.objects.filter (pub_year=YEAR-4 )
     elif sort_by == '2020': 
-        qs = Book.objects.filter ( Q (pub_year__icontains=2020) )
+        qs = Book.objects.filter (pub_year=YEAR-3 )
     elif sort_by == '2021': 
-        qs = Book.objects.filter ( Q (pub_year__icontains=2021) )
+        qs = Book.objects.filter (pub_year=YEAR-2 )
     if college != 'Colleges' and college is not None:
         qs = qs.filter(book_college=college)
     if course != '' and course is not None:
