@@ -1,0 +1,722 @@
+bookId,title
+1,"""TOFULICIOUS"" Feasibility Study"
+2,An Exploratory Research on How Barangay VAW Desk Persons Respond to VAW Victim-Survivors 
+3,An Exploratory Study about the Affection of the Elderlies Interactions with the Agency Staff Inside House of Somang
+4,"Community Survey of Barangay 658 Intramuros, Manila: Basis in Developing Relevant Community Programs"
+5,"Community Survey of Barangay 654 Zone 69 District V Intramuros, Manila: Basis in Developing Relevant Community Programs"
+6,Perception of Selected Young Professionals in Minalungao National park as a Tourist Destination: A Basis for Promitional Video Advertisement 
+7,"A Study on the Level of Awareness, Attitude, and Extent of Compliance of the College Students of Intramuros, Manila on the Establishment of Smoke-Free Environment in Public and Enclosed Places: Basis for Advocacy Campaign "
+8,The Rise of Career Opportunities in the Esports Industry for Millenials: Basis for a Communication Plan 
+9,The Effects of the Assistance in the Lifestyle of the Beneficiaries Featured in Rappler MovePH's #InspireCourage Articles: A Basis for a Video Documentary 
+10,"The Awareness, Interest, and Participation of PLM Students Towards Metro Manila Pride in Promoting the Lesiban, Gay, Bisexual, Transgender, Queer+ Community: A Basis for Public Relations Campaign"
+11,"Online Sexual Objectification of Filipina: A Content Analysis on RBreezy's Facebook ""Memes"" "
+12,Perception and Patronage of Conventional Taxi Services (CTS) Commiters on Conventional Taxi Services in Manila City: A Basis for a Public Relations Campaign
+13,A Study on the Perception of Respondents on Ninoy Aquino Parks and Wildlife Center as Ecotourism Park and Rehabilitation Center: A Basis for PR Plan 
+14,The Effects of Online Body Shaming Among Female Millennials: Basis for a Proposed Advocacy Campaign 
+15,Level of Awareness and the Attitude of Pet Owners and Non-Pet Owners of the City of Manila on the Philippine Society for the Prevention of Cruelty to Animals (PSPCA): Basis for a Digital Media Campaign
+16,"A Study on the Preservation Efforts of the Weaving Industry by the Three Stakeholders in Paoay, Ilocos Norte: A Basis for Video Documentary "
+17,An In-depth Analysis on Ishmael Bernal's Himala (1982) As a Basis for A Film Literacy Guidebook
+18,The Role of Escuela Taller in the Conservation and Rehabilitation of the Philippine Built Heritage: Basis for a Public Relations Campaign
+19,Assessment of the Communication Strategies in Promoting the Preservation of Sea Turtles in Bataan: Basis for a Civic Education Plan 
+20,A Content Analysis on Selected TV Patrol News Reports with Respect to the Comments of the President of the Philippines 
+21,"Factors that Determine the Current Status of Pinoy Indie Music and the Challenges in Music Production, Distribution, and Promotion: A Basis for a Media Plan"
+22,The Level of Awareness and Patronage of Manileño Film Enthusiasts on the Emergence of Alternative Cinema Houses in Metro Manila and their Benefits to Philippine Cinema 
+23,Puning Hot Spring and Restaurant as a Wellness Adventure and Experiental Destination: Basis for a Branding Campaign
+24,An Assessment on the Promotional Efforts of Shadow Play Organizations Towards Shadow Play as a National Art Form: Basis for Video Production
+25,An Assessment on the Promotional Strategies of the Philippine Animal Welfare Society (PAWS) on its Animal Adoption Program Towards the Residents of the City of Manila: Basis for a Promotional Campaign
+26,Consumer's Preferences and Appraisal of Bakerite Bakery Pastry Products: A Basis for an Advertising Campaign 
+27,"A Case Study on the ""Pagpapanday"" (Blacksmithing) Preservation Efforts of Pozorrubio, Pangasinan: A Basis for Video Documentary"
+28,An Assesment of the Communication Tools in Promoting the City of San Fernando Pampanga as a Tourist Destination: Basis for a PR Campaign 
+29,"A Case Study on the Preservation Efforts of the Pottery Industry in Calumpit, Bulacan: A Basis for Video Production "
+30,"An Assessment of the Promotional Efforts and Initiatives Used in the Promotion of the Municipality of Liliw, Laguna as Footwear Capital of Laguna "
+31,Internet of Things-Based Electric Switchboard Panel Using Mobile Application as Control Mechanism 
+32,Out-Patient Heart Monitoring System Using the Concept of the Internet of Things (iHeart) 
+33,Microcontroller-Based Solid Waste Filtration and Monitoring System Applied in Drainage 
+34,Microcontroller-Based Monitoring And Maintaining Device for Saltwater Aquarium
+35,Microcontroller-Based Automated Solid Waste Sorting Bin and Monitoring System
+36,ECollectibles: Mobile Application for locating rare items and predicting future values of collectible items using data mining 
+37,I will survive: A Virtual Simulator for Disaster and Emergency Situation 
+38,Zen Garden: An Educational Mobile Application about Botany with the use of Augmented Reality 
+39,ColApps: A Mobile Application to Identify the Legitimate Public Transportation through Arduino Technology 
+40,Business Chooser App: A mobile application that aid small scale entrepreneurs in choosing a better location and type of business
+41,Parking Warden: A Mobile Application that Detects Illegal Parking Vehicles through NFC Technology 
+42,Nimble (Pedestrian Accident): Death-Causing-Accident through a Virtual Reality Game using VR Box 
+43,VirtualPatrol: A Mobile Virtual Reality Training Simulator for Local Newly Recruit Police Officers 
+44,Brain-Controlled Computer through Brainwaves using Electroencephalography
+45,CoDe (College Decisions): A Data Mining and Analytics Application that would predict the Student Enrolment and Attrition Rate upon Entry for the Current Semester for Pamantasan ng Lungsod ng Maynila 
+46,Faus Food: A Mobile Simulation Game Application on Filipino Food Business 
+47,TreeTector: An Android Mobile Application that Identifies the Types and Calculates the Ages of the Different Trees in Bulacan and provide consistent and precise soil analysis using Arduino 
+48,NetMan: A Network Management Software Applied to PLM Network System 
+49,Gym Well: An Augmented Reality that provides proper ways of workout routines based on the scanned gym equipment 
+50,HearSay: An Android Mobile Application for the Hard of Hearing and Deaf-Mute People 
+51,CALEB: An Android Mobile Application for Preliminary Assessment of Pet's Health Condition with Augmented Reality 
+52,Malaria RemoVeR: A Virtual Reality Game that Helps Fight and Prevent Malaria 
+53,Virtual Defender: A Virtual Reality Game for Self Defense using Virtual Reality Controller 
+54,A Virtual Reality Simulator: Training for Physical Fitness
+55,VEAReality: A Virtual Training for BPO Company - Inbound Call for Customer Service 
+56,Pamantasan Volleyball Analyzer (PVA): A PLM based mobile application that hepls volleyball coaches analyze and strategize their games using Data Mining 
+57,Shazam Outfit: A Mobile Game Application that Brings Out One's Identitu through Outfits Using Artificial Intelligence 
+58,Up&Up: A mobile application that provides simulation of the experience on the top destinations in the Philippines through Virtual Reality 
+59,Hiretrack: A Data Mining Web-Application for an Online Applicant Evaluation and Employee Appraisal applied in PLM-HRDO
+60,Disaster Simulation: Mobile Game Application Using Artificial Intelligence 
+61,Ready Pinoy!: An Augmented Reality Mobile Application to Guide People about the Proper First Aid 
+62,Acid-dent: A research study that helps Filipino fishermen to measure and identify the acidity of Philippine seawater
+63,Greenovate: A Mobile Based Application that Monitors and Improves Crop Production Despite the Effects of Climate Change using Data Analytics
+64,Cooktect: A Mobile Application that provides Recipe based on Available Ingredients via QR Code 
+65,Bullying Experiences of Male and Female Preschoolers in a Private School as a Basis for Behavior Awareness Program
+66,Level of Parental Monitoring and Fine Motor Skills Development of Kindergarten Learners: A Basis for Enhancement Activity
+67,Values Development of Kindergarten Pupils: Basis for Homeroom Guidance Module. 
+68,Print Environment and Emergent Love for Reading of Preschool Pupils Towards a Proposed Five C's of Literacy-Rich Classroom Program
+69,Audio-Visual Aids and Kindergarten Pupils' Attention Span: Towards A Teacher's Guide on the Use of Technology
+70,Story Comprehension of Kindergarten Pupils Using Interactive Storytellling Strategies: Basis for a Mini-learning Plan for Teachers
+71,Parental Involvement and Kindergarten Learners' Speaking Ability: Basis for a Seminar on Awareness and Developing Parenting Practices
+72,The Effectiveness of Memes in Encouraging Participation in Science Class
+73,Performance in a Science Retention Skill after Participating in a Traditional Game and in E-Game
+74,Performance in a Science Test of Lecture-Taught and Flipped Class-Taught: Towards Improved Instruction 
+75,K to 12 technical-Vocational-Livelihood Track and Job Oppurtunities
+76,The Implications of Fake News to the Attitudes of Grade 8 Students: Basis for a Proposed Information Campaign Towards Social Responsibility on Using Social Media
+77,Levels of Pornography Exposure among Teenagers 
+78,"Impact of Laboratory Facilities to Learning and Teaching of Science, An Evaluation of Substitute Activities"
+79,"A Five Year Financial Plan for Integrated Waste Management, Incorporated "
+80,A Strategic Financial Plan (San Miguel Brewery Inc) 
+81,Five Year Financial Plan for New Ping Ping Lechon and Restaurant Inc. 
+82,A Strategic Financial Plan (South Asialink Finance Corporation) 
+83,A Five Year Financial Plan of Ace Promotions and Marketing Corporation 
+84,A Five Year Financial Plan of Mc Philips Food Industries Inc. 
+85,A Five Year Financial Plan of Tondo Foreshore Market Vendors Development Cooperative 
+86,"A Five Year Financial Plan for Manila Bay Spinning Mills, Inc. "
+87,A Five Year Financial Plan for Northcom Security and Investigation Agency Inc. 
+88,A Five Year Financial Plan for Ohana Trading Corporation 
+89,A Five Year Financial Plan for Worldwide Service Provider Cooperative
+90,A Five Year Financial Plan for Phil-Nippon Kyoei Corporation
+91,A Five Year Financial Plan for Agno Metal Trade
+92,A Five Year Financial Plan of Alpa Plumbing Works Inc. 
+93,"A Five Year Financial Plan for Emerson Network Power, Inc. "
+94,A Five Year Financial Plan of Paco Soriano Pandacan Development Cooperative
+95,Five Year Financial Plan of Ark Travel Express Inc. 
+96,A Five Year Financial Plan for Everfirst Loans Corporation
+97,A Five Year Financial Plan for Triple Excellence Marketing Services Inc. 
+98,A Five Year FInancial Plan for Manila Hotel Corporation 
+99,A Five Year Financial Plan of SteelAsia Manufacturing Corporation
+100,A Five Year Financial Plan for Roxas Food Ventures Inc. 
+101,Feasibility Study: Employees Provident Fund
+102,"A Five Year Financial Plan for Red Ribbon Bakeshop, Inc. "
+103,"Five Year Financial Plan of The Caramel Pearl, Inc. "
+104,Five Year Financial Plan: Lead Core Technology Systems Inc. 
+105,A Five Year Financial Plan for The Electric Group (Phil.) Corporation
+106,A Strategic Financial Plan: SFA Semcon Philippines Corporation
+107,A Five Year Financial Plan of Fastrust Services Inc. 
+108,A Five Year Financial Plan for HB Lumbang Electric and Industrial Corporation 
+109,A Strategic Financial Plan: PLDT Inc. 
+110,Five Year Financial Plan of Aprisa Business Process Solutions Inc. 
+111,Enhancing the Skills in Solving Word Problem of Grade Nine Students Through Programmed Instruction and Mathematics Dictionary
+112,Enhancing the Level of Participation of Grade 9 Students in Algebra Using Brain-Based Learning Strategies
+113,Implementing Class Preparation Assignments for Enhancing the Participation of Learners in First Period Subject Mathematics
+114,Vocabulary Enrichment Towards Higher Level of Understanding of Mathematical Concept of Grade 7 Students
+115,Game-Based Learning and Self-Reflection Assessment: Helping Grade 8 Students Cope with Mathematical Anxiety
+116,Increasing the Level of Motivation in Mathematics Activities Through reward System
+117,Real-Life Scenario Application and Mathematics Appreciation of Grade 8 Students
+118,Enhancement of Learning Retention in Mathematics of Grade 9 Students: Traditional and Experiential Learning Methods
+119,Using Collaborative Activities in Enhancing Students' Ability in Soilving Word Problems
+120,Improvement of the Pre-requisite Skills in Polynomials Using Review and Remedial Class
+121,Enhancing the Skills of Grade 7 Students in Performing Fundamental Operations on Integers through Bridge System and Story Problem Technique
+122,Perception on Marital Conflict as a Motivation on Academic Performance
+123,Emotional Intelligence as Correlates to Coping Strategies on Academic Adjustment among First Year College Students
+124,Filipino Male Body Image: Factors Influencing Satisfaction and Drives of College Students from a Manila Local University Towards an Ideal Body
+125,The Resilience and Coping Mechanisms Used on a Heterosexual Romantic Relationship Dissolution by Undergraduate Students of Pamantasan ng Lungsod ng Maynila
+126,Substance Abuse and Resiliency among Troubled Youth
+127,Sleep Deprivation as Correlates to Psychological Well-being of Selected College Students
+128,Grit and Optimism as Predictors of Psychological Well-being
+129,Personality Traits as Correlates to Decision-Making Among Student Leaders: Basis for Leadership Training Program
+130,The Role of Family Structure on College Students' Life
+131,Demographic Profile and Gratitude among Individuals with religious Involvement
+132,Online Gaming and peer Social Interactions: Implications of defense of The Ancients (DOTA 2) and League of Legends (LoL) to Gamers Studying at Pamantasan ng Lungsod ng Maynila
+133,The Correlation of Lte-Night Screen Time to Depression among Filipino College Students in a Selected Local State University
+134,Demographic Profile nad Level of Resilience as Correlates to Coping Strategies of Parents of Children with Special Needs: Basis for Parental Adaptability Program
+135,Coping Strategies of Student Leaders for the S.Y. 2018-2019 of Pamantasan ng Lungsod ng Maynila
+136,Coping and Self-Efficacy of Filipino Young Adults Who Grew Up in a Single Parenting Household
+137,An Exploration of the Psychological Well-Being of Adolescents Living at a Home Care Center
+138,The Difference between the Social Networking  Sites Usage and Self-Esteem of Female and Male BS Psychology Students
+139,Self-Concept Among Male Adolescents with Absentee Fathers: Basis for Strengthening Support Systems
+140,Using Social Proof Signs to Affect the Littering Behavior of Students Using Gazebos in a Local Manila University
+141,Street harassment as correlates to Psychological distress among selected female high school students
+142,Playing Musical Instruments as Correlates to psychological Well-being
+143,A Correlational Study on Paternal Love Language and Resilience among Graduating Students of Pamantasan ng Lungsod ng Maynila
+144,Perceived Acceptance Across Significance Relationships of Alcohol Consumers Among Graduating College Students
+145,Perceived Parenting Style and Life Satisfaction Among Selected Filipino Adolescents
+146,Inventory of the Insects Found in Arroceros Forest Park (Manila City) and Town & Country Southville Subdivision (Biñan City)
+147,"An Inventory of Insects in Intramuros, Manila"
+148,"Prevalence of Trypanosoma evansi Infection in Cattle from Naic and Dasmariñas, Cavite"
+149,"Inventory of Macrofungi in Mt. Malindig, Brgy. Sihi, Buenavista, Marinduque"
+150,Bioaccumulating Capacity of Pakong-tubig (Ceratopteris thalictroides) Exposed to Different Concentrations of Cu (II)
+151,In vitro Antocogulant Potential of Citrus maxima (Burm.) Merr. 'Suha' Leaf Crude Extract Using Prothrombin Time Assay
+152,In Vitro Study of Anthelmintic Potential of Bayag-usa (Voacanga globosa) Leaf Extract against Dog Hookworm (Ancylostoma caninum)
+153,"Survey of Plants Used by the Itawis in Traditional Health Care Practices in Basi, Solana, cagayan with notes on Lethality Activity Using Brine-Shrimp (Artemia salina) Bioassay"
+154,"Inventory of Gastropods in Brgy. Union, Libertad, Antique"
+155,Effect of Varioud Concentrations of Iron Oxide (Fe?O?) on the Phagocytic Activity of Hemocyte and Histological Changes on Hepatopancreas and Gill Tissues of Macrobrachium rosenbergii (Giant Freshwater Prawn) Post larvae
+156,"Identification of Gram-Negative Bacteria in Philippine-Cupped Oysters (Crassostrea iredalei) From Selected Seafood Port Stations of Parañaque, Las Piñas and Cavite City"
+157,Antifungal Potential of Tungkod-pare (Cordyline fruticosa) Crude Leaf Extract on Fusarium solani
+158,Antagonistic Potential of Enterococcus faecalis on Citrobacter freundii in vitro
+159,"Microbial Analysis of Groundwater in Brgy. Molino 2, Bacoor, Cavite"
+160,"Identification and Distribution of Mangrove Trees in Barangay Taliptip, Bulakan, Bulacan"
+161,"Antimicrobial Potential of Amazon Lily (Eucharis amazonica) Methanolic Crude Extract Against Staphylococcus aureus, Escherichia coli and Candida albicans"
+162,Germination of Selected Seeds Passing the Gut of Malayan Box Turtle (Cuora amboinensis) with notes on Endozoochory
+163,"Detection of Gastrointestinal Coccidia in Domestic Pigs and Cows Obtained from a Slaughterhouse in Vitas, Tondo, Manila City"
+164,Effects of Motor Oil Contamination on th Growth and Development of Lettuce (Lactuca sativa)
+165,Formulation of Tissue Culture Medium Using White Oyster Mushroom (Pleurotus florida) In Vitro
+166,"Prevalence of Trypanosoma evansi Infection in Cattle (Bos taurus) from tagaytay and Silang, Cavite using Blood Smear Technique"
+167,"Inventory of Epiphytes on the Walls of Intramuros, Manila"
+168,"Antimicrobial Potential of Malakmalak (Palaquium philippense) Crude Leaf Extract on Pseudomonas aeruginosa, Staphylococcus aureus and Candida albicans"
+169,"Antimicrobial Potential of Methanolic  Crude Leaf Extract of Clerodendrum macrostegium (Kasopangil-na-Puti) on Staphylococcus aureus, Pseudomonas aeruginosa and Candida albicans"
+170,Inventory and Carbon Stock Assessment of Trees in the Riverbanks of Marikina City
+171,"Inventory of Basidiomycetes in Mount Dibudalan in Barangay Zabali, Baler, Aurora with notes on other Macrofungi"
+172,Inventory of Volant Mammals in Selected Districts of Manila
+173,Hypoglycemic Potential of Crude Extract of Talinum paniculatum (Jacq.) Gaertn Leaves in Alloxan-induced Diabetic Mice (Mus musculus)
+174,"Inventory of Gastropods in Romblom, Romblon Island, Philippines"
+175,Social Media use as Correlates to Procrastination among College Students 
+176,Rape Myth Acceptance as Correlates to the Attitude towards Rape Victim of First Year Psychology Students at Pamantasan ng Lungsod ng Maynila
+177,Psychological Effects of Owning a Dog among FIlipino Adults
+178,Perceptions on Self-Regulated Learning of PLM Medica Students: A Qualitative Study
+179,The Coming Out Stories of the LGBT Students in Pamantasan ng Lungsod ng Maynila
+180,Humor as Correlates to Stress Among Selected College Students: Basis for a Guidance Intervention Program
+181,Family Structure on Locus of Control
+182,The Correlation of Spirituality and Resilience Among Freshmen Undergraduate Students of Pamantasan ng Lungsod ng Maynila 
+183,Intelligence as Correlates to Depression among College Students: A Basis for Behavioral Management Program
+184,Anxiety as Correlates to Emotional Intelligence among First Year BS Entrepreneurship Students of PLM
+185,Mental Health in an Emerging Country: Perception towards Mental Health Among Adults of Metro Manila
+186,Perceived Acceptance and Sense of Belonging Among LGBTQ College Students of Pamantasan ng Lungsod ng Maynila 
+187,Silip sa Nakasarang Pinto ni Dyoker: A Phenomenological Study on Filipino Stand-Up Comedians
+188,Sexual Orientation and Gender Identity and Expression in the Societal and Familial Contexts: The Lived Experiences of Filipino Gay Sexual Minorities in Adulthood
+189,Bullying as predictors of Depression 
+190,Dating Infidelity: The Arising Dilemma of Unfaithfulness in the Modern Time 
+191,Relationship between Self-Handicapping Anxiety among First Year Psychology Students of Pamantasan ng Lungsod ng Maynila 
+192,Work Motivation as Correlates to Professional Quality of Life Among Mental Health Nurses in Various Mental Institutions around Metro Manila 
+193,Demographic Profile and Perceived Gender Discrimination as Correlates to Employee Performance: Basis for Gender Sensitivity Training Program 
+194,Sa totoo lang friend; The Benefits of Being Candid 
+195,Music Preference of Selected 4th Year Students in Pamantasan ng Lungsod ng Maynila as Correlates to Optimism 
+196,The Attitudes toward Self-Esteem and the Perceptions of Resiliency among Female Prostitutes within the City of Manila 
+197,The Relationship Between Body Dissatisfaction and Self-Esteem Among Female First Year College Students
+198,Unveiling the Conventional and Whatnots: Premarital Sexual Permissiveness from the Perspectives of Filipinos Categorized in Generations X and Z at Pamantasan ng Lungsod ng Maynila 
+199,An Animal with a Human Heart: Effects of Having an Emotional Support Animal in the Lives of People with Anxiety and Deppression
+200,The Correlation Between Pet Attachment Style and Pet Bereavement Among the 4th Year College Students of Pamantasan ng Lungsod ng Maynila 
+201,The Effect of Social Approval Gained through Facebook to the Self-Esteem of Adolescents
+202,Relationship Between the Adversity Quotient and Psychological Well-being of Psychology Students of Pamantasan ng Lungsod ng Maynila 
+203,Histological Analysis of Milkfish (Chanos chanos) Liver from Selected Areas of Laguna Lake with notes on Lead and Manganese Concentrations and Hepatosomatic Index
+204,Species Richness of Vascular Epiphytes in the Neotropical Region
+205,"Potential Medicinal Uses of Purple heart (Tradescantia pallida), San Francisco (Codiaeum variegatum) and Talisay (Terminalia catappa) - A Review"
+206,Analysis of Copepod Species in Selected Countries in Southeast Asia
+207,Analysis of Cytotoxic Activities of Select Plant Extracts against A549 - Lung Adenocarcinoma Cell Line
+208,"Antibacterial Properties of Cacao (Theobroma cacao), Lead Tree (Leucaena leucocephala_ and Tibig (Ficus nota) extracts against Salmonella typhimurium: A Review"
+209,Anti-Angiogenic Activity of Katmon (Dillenia philippinensis Rolfe) Leaf Crude Extract using Chick CAM Assay
+210,Antihyperglycemic Potential of Crude Extract of Bruguiera gymnorrhiza (Large leaf orange mangrove) on Alloxan-induced Mus musculus (White Mice)
+211,"Inventory of the Herpetofauna in Bulan, Sorsogon"
+212,Identification of Enteric bacteria in Selected Viands Sold in a University in Manila
+213,"Prevalence of Trypanosoma evansi in Cattle (Bos taurus) from Maragondon and magallanes, Cavute through Blood Smear Technique"
+214,Antifungal Potential of Anuang (Kyllinga monocephala Rottb.) against Truchophyton rubrum
+215,Carbon Stock Assessment and Inventory of Trees in Three Selected Areas of Rizal park
+216,"An Inventory of Arachnida in Intramuros, Manila"
+217,Effect of Water Lettuce (Pistia stratiotes) Vermicompost on the Growth of Tomato (Solanum lycopersicum)
+218,Radioprotective Potential of Leaf Extract of Sapinit (Rubus rosifolius) On the Sperm Count and Sperm Morphology of y-Irradiated Mice (Mus musculus)
+219,Ethnomedicinal Plants and Healthcare Practices among kankana-eys of Mountain Province with Notes on Cytotoxicity of the Most Commonly Used Plant Species
+220,"Ethnomedicinal Practices by the Hanunoo Tribe in Barangay Benli, Bulalacao, Oriental Mindoro With Notes on the Lethal Activity of Three Selected Plant Species"
+221,Anti-angiogenic Potential of Dog's Tongue (Pseudelephantopus spicatus (Juss.) Rohr.) Plant Extract in Chick Chorioallantoic membrane
+222,"Survey of Marine Gastropods in Rizal, Gubat, Sorsogon with Notes on Other Freshwater Species in the Area"
+223,Relationship between Body Image and Level of Self-Esteem Among Selected Female Adolescents of a Local University
+224,The Academic Self-Efficacy Among Students Who Took The K-12 Curriculum and The Revised Basic Education Curriculum
+225,Relationship of Parenting Styles and Self-Esteem Among Selected Senior High School Students 
+226,Self-Concept of Grade 10 Students with OFW Parents as Compared to Students with Non-OFW Parents in De La Salle Araneta University 
+227,Attitudes as Correlates to the Support of Heterosexuals towards LGBT in the Philippines 
+228,Emotional States as Correlates to Self-Esteem among Deaf in Philippine School for the Deaf
+229,Experience of Bully Victimization and Resilience Among First Year College Students of PLM 
+230,JOLLICS Compiler
+231,Mobizilla Compiler 
+232,An Enhancement of Text-Based CAPTCHA ALgorithm Using Splitting and Rotating Applied in Web Security 
+233,Shortstraw Algorithm Applied in Draw-a-Person Test Using Android Mobile Application
+234,An Enhancement of ROCK Clustering Algorithm Applied in a Recommender System 
+235,Social Media Compiler
+236,Rook Compiler
+237,PCxD Compiler
+238,Olympiad Compiler
+239,C:\Drive Compiler
+240,Manor House Compiler
+241,HuMac Compiler
+242,MillenialCS Compiler
+243,MTG Compiler
+244,BWorm Compiler
+245,UFC ++ Compiler
+246,An Enhancement of Levenshtein Algorithm Applied in Spell Checker System 
+247,Mobile Application for Hospital Tracking Using A* Algorithm
+248,An Enhancement of Double Metaphone Algorithm Applied in Spell-Checker and Corrector for Filipino Language
+249,Enhancement of Term Frequency-Inverse Document Frequency (TF-IDF) Appplied in Automatic Keyword Generation for Blogging System
+250,An Enhancement of Seam Carving Algorithm in Effective Image Resizing
+251,Adaptive E-Learning Web Application Using State-Action-Reward-State-Action (SARSA) Algorithm for English Subject of Students in Secondary Education 
+252,Further Enhancement of Jump Point Search Algorithm Applied in Pathfinding in a Cave Explorer
+253,A Further Enhancement of the Simple Naive Algorithm Applied In-Text Summarizer
+254,An Enhancement of the Structure of Burrows-Wheeler Compression Algorithm Applied in Text Encryption
+255,Online Grocery System Using Apriori Algorithm Applied in Identifying Associated Brands for Data Analysis 
+256,A Further Enhancement of Porter 2 Stemming Algorithm Applied in the Catalog of PLM Library
+257,An Enhancement of the Hill Climb Algorithm Applied in a Tour Planner Application 
+258,An Enhancement of Reverse Encyption Algorithm (REA) Applied in Database Encryption and Decryption for Inventory Management System 
+259,A Mobile Application Using Matrix Factorization Algorithm for Travel Itenerary Recommendation
+260,Jflate Algorithm: A Combination of JBIG2 and Deflate Aplplied in PDF File Compression
+261,An Enhancement of Random Forest Algorithm Applied in Credit Card Fraud Detection System 
+262,Plagiarism Detection Application Using Enhanced Rabin-Karp Algorithm
+263,An Enhancement of Passpoint Algorithm Applied in Picture Password Application Using Android Smartphone
+264,An Enhancement of JPEG Algorithm Applied in Image Compression
+265,An Enhancement of Linear Congruential Generator Applied in Bingo Card Generation and Number Calling
+266,An Enhancement of HPA* Pathfinding Algorithm Applied on Nightmares 
+267,An Enhancement of Barcode Localization Algorithm Applied on Camera-Based Barcode Reader
+268,An Enhancement of IDA* Search Algorithm Applied in Path Finding of a Maze-Related Game Named The Labyrinth
+269,A Further Enhancement of OCR's Two-Pass Image Labeling Algorithm Used for Converting Scanned Text Documents into an Editable and Searchable Data 
+270,An Enhancement of Backpropagation Algorithm Applied to Intelligent Personal Assistant Development Platform
+271,An Enhancement of Procedural Dungeon Generation used in Pixel Dungeon
+272,A Further Enhancement of Paul Graham's Bayesian Algorithm Applied in Spam Filtering
+273,An Enhancement of A* Path-Finding Algorithm Applied in Maze Solver
+274,A Further Enhancement of the Steganography Algorithm to Hide Secret Message Inside an Image
+275,A Further Enhancement of Boyer-Moore Algorithm Applied in Braille Translation 
+276,An Enhancement of Secure Hash Algorithm-1 Applied in LinkedIn to Secure Users; Passwords
+277,ZNER-ECNIV: An Enhancement of Inverse-Indexing Algorithm Applied on Information Retrieval
+278,An Enhancement of Eigenface Algorithm Applied in Missing People Tracer
+279,Enhancement of Perceptual Hashing Algorithm Applied on Insight Application
+280,An Enhancement of Stroke Width Transform Algorithm Applied in Text Detection in Images
+281,Radioprotective Potential of Leea manillensis syn. guineensis (Abang-abang) Leaf Extract on gamma-irradiated Human Blood Lymphocytes in vitro
+282,Hypolipidemic and Weight Reducing Potential of the Fruit Pulp Extract of Tiesa (puteria campechiana) in High-carbohydrate Cafeteria Diet-fed Mice (Mus musculus)
+283,Production of Biological Stains from Hylocerus polyrizhus (Dragon Fruit) and beta vulgaris (Red Beet) Ethanolic Extracts for Ancylostoma caninum Filariform Larvae
+284,Anti-angiogenic Potential of Coat Buttons (Trida procumbens) Leaf Crude Extract using CAM Assay
+285,"Histological Effects of Heavy Metal on Selected Organs of Decapterus macarellus (Galunggong) Found in Baseco Market, Tondo, Manila"
+286,Hyperuricemia Inhibition and Nephroprotective Potential of Zamboangenita (Asytasia gangetica) Leaf Extract in white mice (Mus musculus)
+287,"Antimicrobial Potential of Shaggy Mane (Coprinus comatus) Crude Extract on Bacillus cereus, pseudomonas aeruginosa and Candida albicans"
+288,Re-emergence of Disease-Causing Bacteria: Bordetella pertussis and Corynebacterium diphtheria
+289,Anti-hyperglycemic Potential of Doña Aurora (Mussaenda philippica A. Rich.) Sepal Extract on Alloxan-Induced Mice
+290,Anti-hyperglycemic Potential of Orange Bracket (Pycnoporus sanguineus) Crude Extract on the Alloxan-Induced Mice
+291,Repellent Effect of Peppermint (Mentha piperita) Against Chtonobdella meyeri Leeches in Mt. Makiling
+292,Detection of Microbial Contaminants in Counterfiet Cosmetics Sold in Manila
+293,Bacterial Analysis of Selected Sandwich Spreads Sold in a Local Market in Manila
+294,Limnoterrestrial Tardigrade Diversity: A Review and Metanalysis
+295,Perception of ITHM Students on the Work Conditions on the Tourism and Hospitality Industry
+296,Commitment of Tourism and Non-Tourism Graduates in Pursuing Career in Tourism Industry
+297,"Perceived Human Impacts of La Mesa Ecopark to the Residents of Lagro Subdivision in Terms of Peace, Pollution, Physical Improvements and Privacy"
+298,Effectiveness of Corregidor as a Dark Tourism destination
+299,The Influence of Travel Blogs on Travel Planning
+300,The Influence of Social Media in Air Travel Decision-Making Process of the Youth
+301,Assessment on Cedarhills Garden Center as a Model for Agri-Tourism Site in Urban Areas in the Philippines
+302,Service Quality of No-Frills Domestic Carriers Based on the In-flight Experinces of Passengers
+303,Contribution of the Footwear Industry on the Local Tourism of Marikina City
+304,An Assessment of Tourist Satisfaction in Minalungao National Park
+305,The Evaluation of Vigan City's Tourism Webpage by the Senior Tourism Students of Pamantasan ng Lungsod ng Maynila and Information Technology Professionals
+306,The Economical Impact of Tourism among the Working Force of Balite Falls
+307,"Travel Agencies in Malate, Manila: Extrinsic Challenges and Changes"
+308,The Utilization of Travel Information Through Electronic Word-of_mouth Communication of Tourists Visiting Intramuros
+309,The Perceived and Preferred Teaching Styles of B.S. Accountancy Students of Pamantasan ng Lungsod ng Maynila for A.Y. 2016-2017
+310,"Academic Self-Efficacy, Study Habits and Motivation of Board Takers: Its Correlation to their CPALE Performance"
+311,"Finance, Human and Technology: An Evaluation for Leveraging"
+312,Correlation of the Board Subjects Between the Academic Grades and CPA Licensure Examination Rating of the Pamantasan ng Lungsod ng Maynila Board Takers
+313,Correlation Between Fourth-Year PLM BSA Students' Financial Knowledge and Their Behavioral Tendencies Toward Spending and Savings
+314,Perception of Pamantasan ng Lungsod ng Maynila Accountancy Students on Accounting Profession
+315,A study on the Compliance of Jeepney Operators of Tayuman- Pritil Route to the 3% Common Carriers Tax Imposed by the Bureau of Internal Revenue
+316,"A Project Feasibility Study on Broiler Contract Growing Business in Brgy. Catandala, Batangas City, Batangas"
+317,An Assessment of Career Preference of the Millenial Bachelor of Science in Accountancy 4th Year Students of Pamantasan ng Lungsod ng Maynila
+318,Analysis of Soft Skills and Attributes for Entry-level Career Success
+319,The Perception of the Fourth Year Bachelor of Science in Accountancy of Pamantasan ng Lungsod ng maynila of the Academic Year 2015-2016 on having On-The-Job Training and Thesis in One Semester and the Outcome on their Academic Performance
+320,The Perception of the Computer-Accounting Skills of Pamantasan ng Lungsod ng Maynila B.S. Accountancy Graduates in Relation to their Employability in Companies in Intramuros
+321,"An Enhancement of Knuth, Morris and Pratt Algorithm Applied in DNA Sequence Matching"
+322,An Enhancement of Dijkstra Algorithm with Jump Point Search Algorithm Applied in Pacman Game
+323,An Android Mobile App for Automatic Centralized Scheduling System Applying Chaid Algorithm
+324,An Enhancement of Bellman Ford Algorithm Applied in Route Calculator
+325,An Enhancement of Genetic Algorithm Applied in Courier Vehicle Routing
+326,An Enhancement of OpenCFU Image Processing Algorithm Applied in OpenCFU Colony Counting Software 
+327,An Enhancement of GeoHash Encoding Algorithm Applied in Finding Nearby and Nearest Establishment for Android Phones
+328,A Further Enhancement of RSA Algorithm Applied in a Client-Server Architecture
+329,An Enhancement of El Gamal Encryption Algorithm Applied in MD Message Controller through Mobile SMS 
+330,An Enhancement of Secure Hash Algorithm-256 Applied on Password Hashing of Plain-text in the Log-In Process of a Chat Forum Mobile Application 
+331,An Enhancement of Multinomial Naive Bayes Algorithm Applied in Spam Detection
+332,An Enhancement of Alom's Algorithm Applied in Finding Vertex Cover
+333,An Enhancement of  NRMP Matching Algorithm Applied in Course Allocation of Incoming College Students in Pamantasan ng Lungsod ng Maynila
+334,A Further Enhancement of Rabin-Karp Algorithm Applied in Plagiarism Detection
+335,An Enhancement of Rule-Based Algorithm Applied in Sudoku Puzzle Solving 
+336,An Enhancement of LSB Algorithm Applied in an Audio Steganography Application
+337,A Further Enhancement of the Term Frequency Inverse Document Frequency Algorithm Applied in Document Search Engine
+338,A Further Enhancement of Tagalog Stemming Algorithm Applied in Tagalog Dictionary Searching
+339,A Further Enhancement of Least Significant Bit Algorithm Applied in Image Steganography
+340,An Enhancement of PageRank Algorithm Applied in Google Search Engine
+341,"KALAT: Kunin-All-Lost-Art-In-Trash using ""Vanilla"" Policy Gradient Algorithm for Recycling Mobile Application "
+342,An Enhancement of Digital Signature Algorithm Used in Data Authentication Applied in Kleopatra
+343,An Enhancement of Simple Naive Algorithm Applied in Text Summarizer 
+344,An Enhancement of Honey Encryption Algorithm Applied in ThinkGeek Online Shopping
+345,An Enhancement of the ITRU Encryption Algorithm Applied in Mobile Instant Messaging Client Applications
+346,Enhancement of the Cellular Automata Algorithm Applied in Cave Map Generation 
+347,An Enhancement of Background Subtraction Algorithm Applied in Sign Language Detection
+348,An Enhancement of Edge-Enhance Maximally Stable Extremal Region Applied on Text Detection of Natural Scene Image
+349,An Enhancement of Sauvola-Shafait's Thresholding Algorithm in Effective Document Image Binarization 
+350,A Further Enhancement of K-Medoid Clustering Algorithm Applied on Blood Donor Behavior Segmentation
+351,A Further Enhancement of Vickrey-Clarke-Groves (VCG) Algorithm Applied in an Online Combinatorial Auction
+352,An Enhancement of Term Frequency - Inverse Document Frequency Algorithm Applied in Document Retrieval System
+353,An Enhancement of PassFace Algorithm for Computer Application's Graphical Password Authentication
+354,A Further Enhancement of the Normapi Algorithm Applied in Filipino Text Message Mobile Application
+355,Further Enhancement of the Gibberish Classification Algorithm Applied in Gibberish Text Document Analyzer 
+356,An Enhancement of CUED Click-Point Algorithm Applied in Graphical User Authentication
+357,An Enhancement of J-Bit Encoding Algorithm Applied in File Compressor System 
+358,Motivation and Volition: A Study on the Dilatory Behavior of First Year to Fourth Year Bachelor of Science in Accountancy Students in Pamantasan ng Lungsod ng Maynila A.Y. 2016-2017
+359,A Correlative Study of the 3rd and 4th Year PLM BSA Students' Perception of the Class Schedule and their Final Grade in Financial Accounting and Reporting
+360,Study Orientation and Fundamental Knowledge as Factors Associated with the Academic Performance in Financial Accounting and Reporting 1 of BS Accountancy (BSA) 2nd Year Students in Pamantasan ng Lungsod ng Maynila (PLM) A.Y. 2016-2017
+361,The Perceived Academic Self-Efficacy of Selected Fourth Year and Fifth Year Accounting Students of Pamantasan ng Lungsod ng Maynila Under Work-based Learning
+362,An Evaluation of Expectations and Actual Experiences of PLM BSA Fourth Year Students A.Y. 2016-2017 on their Internship Program
+363,Criticial Accounting Information Technologies: The Level of Self-Perceived Knowledge and Competence of Pamantasan ng Lungsod ng Maynila Accountancy Students
+364,Grade 11 Accountancy and Business Management Strand in Pamantasan ng Lungsod ng Maynila for the S.Y. 2016-2017: An Examination of Their Perception on Accounting Profession
+365,An Analysis of Accounting Procedures for Biological Assets Employed by Small-Medium Sized Piggery Enterprises in District IV of Bulacan
+366,The Effect of Sleeping Duration to Academic Performance in Financial Accounting & Reporting I and II of fourth Year Accountancy Students of Pamantasan ng Lungsod ng Maynila for the A.Y. 2016-2017
+367,Factors Affecting CPA Licensure Examination Performance: A PLM Graduate's Insight
+368,The Effectiveness of Accounting Information Systems on Business Organization
+369,An Analysis on Perception and Attitude of Pamantasan ng Lungsod ng Maynila's Bachelor of Science in Accountancy Fourth-Year Students on Corporate Social Responsibility
+370,Five-Year Financial Plan of Windtech Energy Conservation Inc.
+371,"Five-year Financial Plan for Power, Manufacturing and Marine Works Inc."
+372,"A Strategic Financial Plan for Alpha Insurance & Surety Co., Inc."
+373,"A Strategic Financial Plan for Asian Bridge Express, Inc. "
+374,A Strategic Financial Plan for Transprint Corporation
+375,A Strategic Financial Plan for D.M. Wenceslao & Associates Incorporated 
+376,A Strategic Financial Plan for JoTech Packaging Corporation
+377,A Strategic Financial Plan for Cargohaus Inc. 
+378,A Strategic Financial Plan for Save Money Trading Incorporated
+379,A Strategic Financial Plan for Manila Water
+380,A Strategic Financial Plan for Queso de Camote
+381,Feasibility Study Product: Queso de Camote
+382,Feasibility Study Product: Banana Burger
+383,Feasibility Study Weightlifting Torta
+384,Feasibility Study Lèvre
+385,Strategic Marketing Plan 2018 for Blend 45 3-In-1 Coffee Mix
+386,"Strategic Marketing Plan 2018 for LBC Express, Inc"
+387,Strategic Plan for Nescafe
+388,Strategic Marketing Plan for Nature's Spring Purified Water/PSWRI
+389,Strategic Marketing Plan for Summit Natural Drinking Water
+390,Palawan Pawnshop Incorporation
+391,2017 Strategic Marketing Plan for JRS Express
+392,Strategic Marketing Plan for Hotel H2O
+393,Strategic Marketing Plan for 2018 of Pure Foods Tender Juicy Hotdog
+394,"Strategic Marketing Plan 2017 for St. Peter Plan, Inc."
+395,Republic Biscuit Corp. (REBISCO)
+396,Strategic Plan 2017 for Globe Telecommunication
+397,Strategic marketing Plan 2017 for Uber Apps Incorporation
+398,Strategic Marketing Plan 2018 for Cibo Incorporated
+399,Strategic Marketing Plan for Mont Albo Massage Hut
+400,Brother
+401,Strategic Marketing Plan for Hapee Toothpaste
+402,Entering the Realm of Toy Collectors
+403,Risk Factors and Effects to College Students
+404,Perceived Work-Related Stressors and Its Effects among Human Resource Personnel: Inputs to Effective Coping Strategies
+405,The Aftermath of Attempting Suicide: Episodic Narratives of Suicide Attempt Survivors in Metro Manila
+406,Self-esteem as a factor of suicide ideation among Engineering Students
+407,Correlation between aggression and depression among Filipino college students: basis for resiliency program for emerging adults
+408,Perceived stress and positive thinking among graduating college students of Pamantasan ng Lungsod ng Maynila
+409,Mag exercise tayo tuwing umaga: motivation and perception of early adult toward exercise
+410,Correlation between parenting style of Filipino Police fathers and social personality of their children in selected precincts in Manila
+411,Perceived stress levels and coping strategies of students taking up board and non-board courses: basis for student mental health program
+412,Job satisfaction and affective well-being among house parents at a public home care
+413,The correlational study between depression and academic performance
+414,The role of demographic profile to meaning of work of selected Filipino workers in Makati: basis for enhancing employee engagement
+415,Millennials vs generation X: stereotypes in the workplace
+416,Study on the attitude towards death risk associated with police works amongst BS Criminology students
+417,Depression as correlates to binge-eating among adolescents: inputs to personality adjustment program
+418,The correlation of caffeine intake to depression among female college students: basis for happiness management program
+419,A phenomenological study of selected freshmen college students with OFW parents experiences on parental absence in Pamantasan ng Lungsod ng Maynila
+420,An analysis of the perception of adults toward youth suicides
+421,Resilience as correlates to the academic performance among irregular students from Pamantasan ng Lungsod ng Maynila
+422,The relationship between burnout and self-compassion among the Psychology students of Pamantasan ng Lungsod ng Maynila
+423,Demographic profile and workplace belongingness as correlates to employee engagement among the employees of a local government unit
+424,Language learning strategies used by male and female foreign missionaries in the acquisition of the Filipino language
+425,Ignorance of sex education and the rampant cases of unwanted pregnancies among teenagers
+426,Individual Responses Towards Catcalling Across Genders
+427,"Adam, Eve and the third sex: perceptions and attitudes of the heterosexual members of a religious organization towards the LGBTQIA+ community"
+428,Interplay of knowledge and attitudes among grade 10 students ragrding HIV
+429,The correlations of music preference and depression among college Filipino students
+430,The effects of preferred music on memory recall among Senior High School Students
+431,Abstract reasoning ability as correlates to aggressive behaviors among 1st year BS Nursing students of PLM
+432,The level of procrastination and reasons for procrastination of Bachelor of Science in Psychology Students of the Pamantasan ng Lungsod ng Maynila
+433,Coping Mechanisms of mothers in dealing with child death at DSWD Ina Healing Center
+434,Burnout and its relationship to academic motivation among senior high school students of Children of Mary Immaculate College
+435,Stress profile of college homosexual students: basis of a burnout prevention program
+436,Viewing internet memes as a coping mechanism to academic stress among senior high school students
+437,Burnout level among selected male and female public high school teachers inputs to a burnout prevention program
+438,"Garlands for sale: the exploration of lived experiences, struggles, and perception about sacrifice of sampaguita vendors in the City of Manila"
+439,Depression as correlates to self-efficacy among college students: inputs to mood management program
+440,"Alcohol expectancies, drinking motives, and drinking behavior among undergraduate of college students in Manila"
+441,Relationship between psychological well-being and job satisfaction of nurses in selected public hospitals in Manila
+442,Mental well-being and self-esteem of first year college students
+443,Role of dogs in happiness and stress-reduction among first year College of Science students of Pamantasan ng Lungsod ng Maynila
+444,Religiosity as Correlates to Academic Stress among College Students
+445,A study on the resiliency against descrimination of selected LGBTQ Students
+446,Self-efficacy as correlates to coping mechanisms among first-year college students
+447,The Relationship between Resilience and Creativity among College Students
+448,Long-term vs. short-term: adult attachment style between currently married couples of different marriage duration
+449,"The perception towards romantic long-term relationships, marriage, and separation of Filipino millennials"
+450,"Gender roles, gender stereotypes, and sexism in the mind of young adults of Dagat-Dagatan Area"
+451,Birth order as correlates to aggression among young adults:basis for aggression enhancement program
+452,A narrative study about social anxiety amongst fourth-year irregular students of the Pamantasan ng Lungsod ng Maynila
+453,Perceived stress as a determinant of resilience among selected first-year students of the Psychology Department
+454,Stress as correlates to self-efficacy among graduating college students of Pamantasan ng Lungsod ng Maynila
+455,The correlation of stress with academic motivation of selected students of College of Science
+456,Stress as Correlates to Life Satisfaction among Selected Nursing Students
+457,Perceived stress and self-efficacy among selected first year college students
+458,Fruits and Vegetables intake as Correlates to Happiness Among Adolescents
+459,Parental Bonding as Correlates to Depression and Self-Esteem among Selected College Students: Inputs to Parental Relationship
+460,Stress and Coping Strategies: Basis for Resiliency Program for Adolescents
+461,Preferred Learning Style as a Predictor of the Academic Performance Among College Students
+462,The Process of Coping of Filipino Adults Diagnosed with Epilepsy
+463,Experiencing the Impact of Sexual Abuse on Forming Intimate Relationship
+464,Exploring the Perceived Stress Level and Coping Strategy of First Year College Students
+465,Exploring the Perceptions of Young Journalists on the Culture of Silence regarding Mental Health in the Journalism Industry
+466,Chronic illness as correlates to psychological wellbeing among adults
+467,"Depression, anxiety, and stress as correlate to emotional state among dentistry students"
+468,Communication Apprehension Among Selected Male and Female Freshman Students
+469,The Mental Health Literacy as a Contributing Factor of Individual's Resiliency among Selected College Students
+470,Emotional Intelligence of Persons Diagnosed with Lupus in Metro Manila
+471,Family Structure and Mealtime as Correlates to Psychological Well-Being among Adolescents: Hasis for Nature- Nurture Program
+472,The Relationship of Academic Resilience and Burnout Among College Students of Pamantasan ng Lungsod ng Maynila
+473,The Nature of Parasocial Relationships in Kpop Fandom Culture
+474,Perceived Social Support and Parasocial Relationship Among the Fans of Celebrities
+475,Neurotic trends and self-esteem among adolescents: basis for personality enhancement program
+476,Social Media Use as Correlates to Introversion and Extraversion: Basis for a Personality Development Program
+477,Compliance to Opposing Beliefs among College Students
+478,Relapse Coping Responses as Correlates to Level of Self-Esteem Among Selected Male Drug Dependents in a Rehabilitation Facility
+479,Well-Being and Self-Esteem of Closeted and Disclosed Homosexuals Among Freshmen
+480,Perceived Social Support on Academic Self-Efficacy
+481,The Effect of YouTube Video Blogs (Vlogs) On Self-Esteem and Life Satisfaction Among Female Adolescents
+482,The Attitudes toward Self-Esteem and the Perceptions of Resiliency among Female Prostitutes within the City of Manila
+483,Perspective of college men on women's virginity
+484,Absentee Parent as Correlates to Self-Esteem among Adolescents: Inputs to Personality Development Program
+485,Sex Role as Correlates to Interpersonal Support among Adolescents: A Basis for Gender Awareness Program
+486,Association of Pet Ownership and Psychological Well-Being among First Year College Students
+487,Family Structure as Correlates to Self-Esteem and Life Orientation Among Adolescents: Basis for Personality Enhancement Program
+488,Urban Versus Rural Living: Subjective Wellbeing of Young Adult Residents
+489,Social Media Use as Correlates to Self-Esteem among Adolescents: Basis for Youth Empowerment Program
+490,Entitlement Levels of Milennials vs Generation X in the Workplace
+491,Personality as Correlates to Academic Procrastination among College Students
+492,Students’ Perception on Parental Conflict and its Effect on their Academic Motivation
+493,Demographic Profile as correlates to the relationship of Stress and Academic Self-Efficacy among Senior High School Students: Basis for Resiliency Program
+494,Types of Academic Motivation as Correlates to Resilience of Undergraduate College Students of B.S. Computer Science in Pamantasan ng Lungsod ng Maynila
+495,Psychological effects of having a broken family among teenagers
+496,The concept of resilience of selected Filipino young adults from separated parents
+497,The De-identification of The Later Born Child Towards Their Older Siblings Among Filipino Children
+498,Self-Efficacy as Correlates to Optimism Among Homeschooled Students
+499,Groomed to be “tough”: Perceived Parenting Styles as Correlates to Resilience of Selected College Students
+500,"Measure of optimism levels in relation to resilience among single mothers in Sampaloc, Manila"
+501,The Impact of Korean Pop to the Motivation of College Students in Pamantasan ng Lungsod ng Maynila
+502,Significance of birth order to self-esteem: basis for personality enhancement program
+503,Fan Culture and The Phenomenon of Fandom Wars
+504,Self-Efficacy and Academic Procrastination on Selected First Year College Students
+505,Academic Motivation as Correlates to Academic Performance Among Irregular Students
+506,Perceived Parenting Styles as Correlates to Academic Self-Efficacy of Selected College Students
+507,Correlates of static working posture among office workers in selected schools along Parañaque City 
+508,Tracer Study of PLM Bachelor of Science in Physical Therapy Graduates (Batch 2010-2015)
+509,Leisure-time physical activity of physical therapists and physical therapy interns 
+510,Use of Recovery Strategies and its Perceived Benefits among Filipino Collegiate Team Sports Athletes
+511,"Assessment of Health-Related Quality of Life Among COPD patients of selected Health Centers of District V, Manila City "
+512,Perception on the use of Virtual Reality in Rehabilitation by Physical Therapists in Manila 
+513,Perception of the first year Physical Therapy students from K-12 curriculum about the scope of Physical Therapy profession
+514,Mixed Martial Arts Injuries and MMA Athlete Characteristics
+515,Correlation of Academic Performance and Residency to Physical Therapist Licensure Exam Performance from 2014-2018
+516,"Correlation of Levels of physical activity to Risk of falls among Elderly individuals in Intramuros, Manila: A Preliminary Report "
+517,The Correlation of Dynamic Balance and Functional Movement among Male High School Basketball Athletes of National University 
+518,The Context of Clinical Prediction Rules and Patient Rated Outcome Measures among Clinical Staff in PLM-CPT Affiliated Centers
+519,"Psychometric Properties of Brief-BESTest on Apparently Healthy Community-dwelling Elderly in Intramuros, Manila "
+520,Clinical Competency of PLM 5th year BSPT Students Batch 2018 as Perceived by PT Clinical Instructors
+521,Prevalence of Musculoskeletal Injuries among Resident Professional Ballet Dancers in Cultural Center of the Philippines
+522,Prevalence of Neck Pain among 3rd year to 4th year IT students of PLM
+523,The Response of Individuals with De Quervain's Tenosynovitis to Different Treatment Approaches: A Preliminary Study
+524,Association of sociodemographic and impairment-based variables with disability level of Manila City hall desk office individuals with non-specific chronic low back pain
+525,Level of Satisfaction and Adherence towards Home Exercise Program after ACL Reconstruction
+526,Relationship of Demographic Profile and Cardiopulmonary Endurance of Geriatric Population in the Philippine Local Community Setting
+527,Use of Manual Therapy for LBP by PTs in Affiliated Centers of PLM A.Y 2016-2017
+528,"Muscoloskeletal disorders among Secondary school teachers in Manila, Prevalence and Risk Factors: A Cross-sectional Study"
+529,Assesing Compliance of PLM Areas Commonly Accessed by PLM-CBR Patients to BP 344
+530,Foam Roller Improved ROM and Decreased Pain Better Than Myofascial Release Among Finance Employees with Postural Neck Pain
+531,Effects of Acupuncture in Quality of Life & Pain to Acute Nonspecific Low Back Pain
+532,Level of Awareness of ALCU-NCR Women's Volleyball Athletes on Sports Physiotherapist's Role
+533,"Knowledge, Confidence, Role Perception, barriers and Feasibility of Counseling Practice of Physical Activity Promotion Among Physical Therapy Interns"
+534,Extent of Application of EBP Process by PT clinicians in PLM-affiliated Institutions
+535,Perception of Metro Manila Physiatrists regarding Dry Needling as a Physical Therapy Intervention
+536,Physical activity and Health-related quality of life among selected licensed Physical therapist of Batch 2012 to 2016 from Pamantasan ng Lungsod ng Maynila
+537,"Levels of Severity of Depression, Anxiety, and Stress in PLM BS Physical Therapy students"
+538,Clinical Education Background and Perceived Level of Expertise in Clinical Teaching of Clinical Instructors practicing in Manila and Quezon City based Rehabilitation Centers
+539,Assessment of proper fit of wheelchairs used by Patients among Foundations in Manila and Quezon City
+540,Prevalence of Ankle Sprain and Jumper's Knee among Competitive Collegiate Volleyball Players during Pre-season Training
+541,"Level of Knowledge, Health, Beliefs and Prevalence of Risk Factors to Osteoporosis among Men residing in Intramuros, Manila"
+542,Prevalence of Musculoskeletal Symptoms among Pamantasan ng Lungsod ng Maynila College Students Hand Held Device Users
+543,The Occurrences of Work-Related Musculoskeletal Disorders Among Sports Physical Therapists in Selected Cities of Metro Manila
+544,Association of Demographic and Professional Profiles to Muscoloskeletal Disorders among Mountaineering Tour Guides in Mount Pamitinan
+545,Self-reported use of Evidence Based Practice of Clinical Staff of Manila and Quezon City Based Centers
+546,Relationship of the Status of Implementation and Level of Usefulness of Outcome Based Education among the 5th year Undergraduate Students of the College of Physical Therapy In Pamantasan ng Lungsod ng Maynila
+547,Driving Posture risk and Prevalence of WRMSD symptoms among tricycle drivers of BLUESCA TODA
+548,Qualitative Analysis of Off-Season Resistance Training Program of Riptide Dragon Boat Team
+549,Learning Styles of Undergraduate Physical Therapy Students in Pamantasan ng Lungsod ng Maynila
+550,Recovery Strategies used by Filipino Taekwondo Athletes and Coaches
+551,Immediate effects of kinesio taping on grip strength of stroke survivors
+552,Health-related Quality of Life and Functional Status of Patients with Muscular Dystrophy
+553,A Comparative Study Of The Implementation Of Essential Intrapartum Newborn Care In Selected Hospitals: A Basis For An Enhancement Program
+554,"UBE Express, Inc. A Strategic Management Paper"
+555,Strategic Management Paper for New Rural Bank of San Leonardo Nueva Ecija Inc. 
+556,"National Market Penetration Strategy for IPSolutions, Inc.."
+557,LGC Logistics Inc. 
+558,Metropolitan Bank and Trust Company 
+559,Social Security System
+560,Royal Cargo Inc.: The Total Logistics Provider
+561,A Strategic Management Paper for CSF Enterprise
+562,A Strategic Management Paper for Greenmar Philippines Incorporated
+563,SL Agritech Corporation
+564,A Strategic Management Paper for Boon Prints Enterprises
+565,"Market Development Strategies for Profit Maximization: Retail Associates, Inc. "
+566,Market Penetration Strategy of Mitsubishi Motors Philippines Corporation
+567,A Strategic Management Paper for Heidelprint Corporation
+568,"A Strategic Management Paper for Adtukart, Inc. "
+569,Strategic Management Paper for Development Bank of the Philippines
+570,"The Strategic Management Paper on GO21, Inc. "
+571,A Strategic Management Paper on Guhring Philippines Inc. 
+572,A Business Strategy of Frabelle Shipyard Corporation 
+573,A Strategic Management Paper for Yu Villar Tadeja and Co. 
+574,"Intensive and Integration Strategies for DBP Data Center, Inc. "
+575,A Strategic Management Paper for Isagani G. Dominguez & Associates
+576,Dynamic Approach to Digital Banking Through Innovation: Strategic Management Plan for Landbank of the Philippines 
+577,Strategic Management IJP Pharma Corporation
+578,Strategic Management Paper for Manila Jockey Club Inc. 
+579,FCF Minerals Corporation 
+580,Goldmine Rice Marketing Growth Strategy: Vertical Forward Integration
+581,"A Strategic Management Paper for Tricom Dynamics, Inc. "
+582,Strategic Management Paper on Motortrade Nationwide Corporation
+583,A Cost-Plus Model Strategy for Prople BPO Inc. 
+584,Bank of Commerce: Attaining the Vision
+585,"Integrated Waste Management, Inc. "
+586,Strategic Management Paper for Grand Plaza Hotel Corporation
+587,A Strategic Management Paper for Commonwealth Insurance Company
+588,Lina Farm & Food Services Corp. 
+589,"An Analysis of the ERP Industry in the Philippines and its Effects to the Strategies of Infosoft International Solutions, Inc. "
+590,"A Strategic Management Paper for Elite Boxing and Fitness, Inc. "
+591,"A Strategic Management Paper for Much Prosperity Trading International, Inc. "
+592,"Cargohaus, Inc. "
+593,Philippine Airlines 
+594,"A Strategic Management Paper for Mang Inasal Philippines, Inc. "
+595,Silver Finance Inc. Sustainability Strategy: Backward Integration
+596,"GM Bank of Luzon, Inc. "
+597,Food Parks in the Philippines: A Strategic Entrepreneurial Management Framework 
+598,Marketing Mix of Selected Restaurants of Food Parks in Quezon City towards the Development of Strategic Framework 
+599,Efficiency of Operational Functions in the Hotel Industry in Metro Manila: Enhancing Customer Experience
+600,Strategic Management Paper for Chesteel marine & Industrial Corporation 
+601,Fiscal Fitness Analysis of the Liberalized Airline Industry in the Philippines as basis for the Strategic Framework in Enhancing their Financial Performance 
+602,"Revisiting the Place Branding of the City of Malolos ""Vamos a Malolos"": Basis for Public Relations Plan "
+603,Assessment of Communication Strategies and Extent of Involvement of Students in Program of Activities: Basis for a Proposed Communication Plan 
+604,Organizational Climate in a Japanese-established Online English Tutorial Company
+605,An Analysis of the Performance in the National Achievement Test in Mathematics (NAT-Math) of Schools in the Division of Manila for School Years 2003-2015 
+606,Comparative Analysis of Range and Endurance using Approximation Method and Flow Simulation 
+607,The Phenomenology of Pinoy Elderly at Home Care 
+608,Sociodemographic Profile as Correlates to Self-Concept and Five Personality Dimensions: Basis for Enhanced Guidance Program
+609,NCBTS-TSNA Teacher Competencies of Private High Schools: Basis for Professional Educational Training
+610,The Writing Proficiency of Filipino Seafarers Towards an Enriched Maritime English Program
+611,Learning Competencies in Araling Panlipunan and Quipper School Towards Creating a Remedial Program
+612,Transformational Leadership Behavior of Academic Heads and Teaching Performance Offaculty Members: A Proposed Enhancement Training Workshop
+613,The Relationship of Academic Performance to Parenting Style and Self-Esteem Among Adolescents: Basis for a School Counseling Program
+614,"Socio-Demographic Profile as Correlates to Attachment Styles Sexual Risk, and Its Coping Strategies: Basis for Holistic Wellness Program"
+615,Development and Validation of Empathy-Induced Altruism Scale
+616,Depression Profile as Correlates to Drinking Motives and Alcohol Consumption Among Adolescents: Basis for Preventive Counseling Program
+617,Relationship Between Dominant Personality Traits and Job Satisfaction Among Filipino Seafarers: Basis for Productivity Enhancement
+618,Personality Profile as Correlates to Resources of Resiliency Among Sexually Abused Adolescents: Basis for Wellness Management Program
+619,Emotional Quotient as Correlates to Mental Health Inventory: Basis for a Wellness Program for Morticians
+620,The Relationship of Sociodemographic Profile to the Symptoms of Anxiety and Levels of Depression Among Young Elderly: Basis for Holistic Gerontological Intervention
+621,Depression Sub-scales as Predictors of Suicide Potential: Basis to Enhance the Guidance Program for the Youth
+622,Basic Personality Traits and Psychological Well-Being of Filipino Seafarers: Basis for Maritime Health Care Program
+623,Psychological Attributes as Correlates to Ego Integrity Levels: Basis for Gerontological Intervention Program Among Imprisoned Women
+624,"The Relationship Among Levels of Aggression, Personality Domains and Bullying of College Students: Basis for Counselling Program"
+625,Work Competency of Management Level Ship Officers: Basis for Company Enhancement Training Program
+626,Core Values Awareness on Organizational Commitment as Correlates to Employees Citizenship: Basis for Leadership Training Program
+627,Coping Styles As Correlates to Level of Perceived Stress and Personality Traits: Basis for Rehabilitative Intervention Program for the Youth
+628,Self-Concept as Correlates to Emotional Quotient: Basis for Counselling Program for Children
+629,Work Values Profile As Correlates to Job Performance among Employees: Basis for Training Program for Blue Collar Workers
+630,Phenomenology of Workplace Culture Adaptation of Filipino Female Overseas Workers
+631,Internal Employability as Correlates to retention Constructs: Basis for Career Enhancement Program
+632,Personality Profile as Correlates to Job Performance: Basis for Career Training Program
+633,Organizational Commitment and Emotional States as Correlates to Employee Performance: Basis for an Enhanced Performance Development Program
+634,Relationship of Employee Engagement and Personal Effectiveness: Basis Human Resource Training Program
+635,Employee Commitment as Correlates to Job Satisfaction and Work Productivity: Basis for an Enhanced Rewards and Recognition Management
+636,Psychological Capital and Happiness Level as Correlates to Job Performance: Basis for Enhanced Faculty Development Program
+637,Relationship Mentoring and Resiliency in Workplace Basis for Proposed Employee Career Program
+638,Resiliency as Correlates to Organizational Commitment Among Millenial Employees: Basis for Proposed retention Program
+639,Employees Performance as Correlates to Level of Commitment: Basis for Career Training program
+640,Learners' carbon footprint as basis for developing energy sustainability action plan
+641,Teaching central dogma of molecular biology using an outcome-based education integrated learning system : effects to student academic achievement
+642,Out-of-field teaching and its impact to academic performance of Grade 9 Biology learners
+643,Science teachers' competence towards an enhanced professional development plan
+644,"Strategy for improving the business of RVN Construction and Trading Int'l., Inc."
+645,"A strategic management paper for Col Financial Group, Inc."
+646,Strategic management paper for Ferra Hotel Premiere by JG managed by Hospitality Business Group Inc
+647,Strategic management paper on Candy Mix
+648,Modagraphics Builders Corporation
+649,A strategic management paper for Infinity Pharmaceutical Corporation
+650,A strategic management paper for Exponent Controls and Electrical Corporation
+651,"UBE Media, Inc."
+652,Strategic management paper : Kabayan Hotel
+653,DBP Leasing Corporation intensive strategic position
+654,A strategic management for MCG Footwear Inc.
+655,Dynamic Outsource Solutions I (DOS1)
+656,Online banking system of universal banks to efficiently enhance customer satisfaction
+657,A strategic management paper for Radio Corporation of the Philippines
+658,A strategic management paper for Entity E
+659,"Federal Express Pacific, Inc. strategy : market penetration and service development"
+660,"Alpha Techno Precision Toolings, Inc"
+661,A strategic management paper for AXXIS Resources and Development Corporation
+662,UCPB Gen : market expansion on non-life insurance thru Bancassurance partnership and microinsurance penetration
+663,Philippine National Bank
+664,A strategic management paper for Feedmix Processing Corporation
+665,PC Master Race - An Android Mobile Apllication for Desktop PC Assembly Using AR
+666,PaciFish: A Real-Time Water Quality Monitoring Application with GIS based Mapping for Bureau of Fisheries and Aquatic Resources in Fish Farming using Arduino Devices
+667,Enhancement of HKemobility Application
+668,The Development of a Key Helmet Authentication System with GPS Tracking Module for Motorcycles in Metro Manila
+669,Curfew Monitoring using Arduino and GPS
+670,JLearn: A Mobile Application that provides hands-On Experience for Nihongo Learners
+671,Applayan: A Job Posting Mobile Application for Job Matching and Caravan Route Mapping
+672,Reverb: An Artificial Intelligence Mobile Application to Screen Symptoms of Depression Using Context Analysis and Speech Recognition
+673,NullPest: A Mobile Application of Agricultural Pest Locator Using SONAR Sensor Set-Up
+674,ISKOLOCK: A Mobile Security Application for School Based Locker Monitoring System
+675,QRx: QR Code for Medical Prescription with Mobile Scanner in the Pharmacy
+676,PUrse: A Blood Pressure Measuring Device with the use of Microcontroller Connected to a Smartphone
+677,An Enhancement of Fake News Detector Using Bayesian Neural Network
+678,The Wastelander: An Adaptive Adventure-Educational Single Player Side-Scrolling Game About Solid Waste Management
+679,APParenting: A Mobile Application for Parents of Children with Autism Spectrum Disorder using Wearable Device
+680,"Lead the Way: An Application that Trains, Enhances and Monitors your Soft Skills in Leadership using Virtual Simulations"
+681,Heat Stroke Prevention using Arduino Sensors and Android Application with Notification
+682,Versatile Vessel: An Adaptive Container for Fruits and Vegetables with Spoilage Detection using Raspberry Pi and Mobile Application
+683,Helders: Mobile Healthcare Application Integrated In A Wearable Device to Help Elders
+684,SIS: A Data Analytics for Online Shopper's Buying Behaviour Using A Mobile Self-Learning Intelligence Chatbot Application
+685,Acci-don't: An Android Based Geographical Information System that Alerts the User when Entering an Accident-Prone Road Location
+686,DULA: An Instructional 3D desktop application that helps kids with ADHD adapt their problems in school or at home
+687,InfoTattoo: A Mobile Application on Kalinga Tribe Batok Culture with Assessment using Augmented Reality
+688,LessQueue: A Swift Fast Food Ordering System Using Android Application
+689,Leptospirosis Detector: The Development of Arduino Device that Monitors the Potential Presence of the Leptospira Bacteria in Floods
+690,GUNFU: The Development of Gun Authentication System using Fingerprint Recognition for Monitoring of Licensed Firearms for the Philippine National Police
+691,Ground Zero: The Development of GIS Incident Reporting System for Civilians and Barangay Tanods
+692,The Development of Water Conservation System with Leakage Detection in Maynilad Provided Residential Areas using Arduino
+693,CARing: An Android Based Mobile Application for Basic Car Maintenance Using Augmented Reality
+694,Mathified: An Android Mobile Application to help High School Students Overcome their Mathematical Anxiety
+695,PureAIRification: Air Monitoring System Using Proportional Integral Derivative Alorithm
+696,The Development of Mobile-based Traffic Violation E-Ticketing System for Private Utility Vehicle Drivers
+697,Chatbot-Virtual Support System with Data Analysis Using Artificial Intelligence Applied for People who have Anoerixia and Builimia
+698,Electronic Logbook Recording Mobile Application for Residential Areas and License Plate using Raspberry Pi and ID Scanner
+699,PLARVIS: Mobile Application with GIS-based Mapping for Philippine Herbal Plants
+700,INTELORA: An Open-Source Integrated Intelligent Personal Assistant Development Platform
+701,FireDroid: Android Home-Based Fire Report and Protection With Smoke Sensor Detector Through Arduino
+702,EyeWork: A Remote PC Monitoring Over an Employee Work Using Android Application
+703,A Predictive Analysis with Decision Support System for Licensure Examination Performance Applied at Pamantasan ng Lungsod ng Maynila - Civil Engineering Department
+704,The Development of an Android-Based Augmented Reality Game for Kindergarten Pupils in Learning Science using Mother Tongue
+705,HELDERS: MOBILE HEALTHCARE APPLICATION INTEGRATED IN A WEARABLE DEVICE TO HELP ELDERS
+706,Real-time Waterborne Disease Detection using Arduino Sensors with Automatic Water Filter using Reverse Osmosis
+707,Parability: A Motion Based Conveyor with Patient Monitoring System for Paralytic Person
+708,S-COME: A Mobile Application for Monitoring Sugar Content in Any Beverages
+709,PUrse: A Blood Pressure Measuring Device with the use of Microcontroller Connected to a Smartphone
+710,Mizu: A Real-time Mobile Monitoring Application for Residential House Water Usage and Consumption Using Arduino Devices
+711,EURICA: An Android Application for Monitoring Hyperaucemia
+712,TrashVen: An Automated Waste Segregation and Monitoring System of Waste Products
+713,TRUEPOTENTIAL: WEB APPLICATION THAT PREDICTS INCOMING SENIOR HIGH STUDENTS' POSSIBLE TRACK USING DATA MINING APPLIED TO RAJAH SOLIMAN SCIENCE AND TECHCNOLOGY HIGH SCHOOL
+714,D.O.S. (Dos' on Self Defense): A Game of Self-Defense on Crime using Virtual Reality with Controller
+715,AUTAPP: Mobile Game Application for Therapy and Development Monitoring in Children with Autism Spectrum Disorder
+716,Serbisyo-On-The-Go: An Android-based Mobile Application for On-Demand Renting of Short-Term Elementary and Service Workers
+717,Dressing Booth: An Augmented Reality Clothing for Online Shoppers Using Content-Based Algorithm for Product Reccomendations
+718,My Derma: FURTHER ENHANCEMENT OF A SKIN DISEASE DETECTION INNOVATION USING IMAGE PROCESSING IN A MOBILE APPLICATION
+719,DRIVE ME CRAZY: AN ANTI-DRUNK DRIVING SYSTEM WITH VEHICULAR SAFETY USING ARDUINO MICROCONTROLLER
+720,FLOOD RESPONSE MOBILE APPLICATION USING ARDUINO
+721,SPECTRUM: The Development of an Application that Helps Graphic and Interior Designers to Know the Importance of Color in Business

@@ -107,6 +107,12 @@ def s_detail(request, book_id): #student paper detail
     #path = os.path.join(os.path.dirname(__file__), 'try.csv')
     #data = pd.read_csv(path)
     data = pd.read_csv('try.csv', sep=',', encoding='utf-8')
+    papers = pd.read_csv('papers.csv', sep=',', encoding='latin-1')
+    ratings = pd.read_csv('papers-ratings.csv', sep=',', encoding='latin-1')
+    ratings = pd.merge(papers, ratings).drop(['timestamp'], axis=1)
+    userRatings = ratings.pivot_table(index=['userId'], columns=['title'], values='rating')
+    userRatings= userRatings.dropna(thresh=10, axis=1).fillna(0, axis=1)
+    corrMatrix = userRatings.corr(method='pearson')
     try:
         book = Book.objects.get(pk=book_id)
         fav = True 
@@ -124,9 +130,25 @@ def s_detail(request, book_id): #student paper detail
         book = Book.objects.get(pk=book_id)
         recommend = recommendations(book_id, 3)
         new = Book.objects.filter(id__in=recommend)  
+        
+        def get_similar(paper_name,rating):
+            similar_ratings = corrMatrix[paper_name]*(rating-2.5)
+            similar_ratings = similar_ratings.sort_values(ascending=False)
+            #print(type(similar_ratings))
+            return similar_ratings
+        
+        strama = [("Factors Affecting CPA Licensure Examination Performance: A PLM Graduate's Insight",5),("A Strategic Financial Plan for Queso de Camote",5),("A Further Enhancement of the Term Frequency Inverse Document Frequency Algorithm Applied in Document Search Engine",5),("A Further Enhancement of the Simple Naive Algorithm Applied In-Text Summarizer",5)]
+        collab = pd.DataFrame()
+        for paper,rating in strama:
+            collab = collab.append(get_similar(paper,rating),ignore_index = True)
+        collab = list(collab.columns.values)
+        print(collab)
+        collab = collab[0:3]
+        #print(collab)
+            
     except Book.DoesNotExist: 
         raise Http404("Title does not exist")    
-    return render (request, 'books/s_detail.html', {'book':book, 'fav':fav, 'recommend':recommend, 'new':new}) #
+    return render (request, 'books/s_detail.html', {'book':book, 'fav':fav, 'recommend':recommend, 'new':new, 'collab':collab}) #
 
 
 @login_required(login_url='/books/login') #catalog page

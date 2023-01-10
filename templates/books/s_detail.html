@@ -61,9 +61,7 @@
     </div>
  <!-- View END -->
 
- <!--{% for i in recommend %}
-    <p> {{i}} </p>
- {% endfor %}-->
+<!-- content-based start -->
  <h2><u>Browse Similar Papers:</u></h2><br>
  <div class="flex">
     {% for book in new%}
@@ -81,50 +79,21 @@
     </div>
     {% endfor %}
 </div><br><br> 
+<!-- content-based end -->
 
 <h2><u>Based on your recent activity: </u></h2><br>
  <div class="flex">
+    {% for i in collab %}
     <div class="card">
         <img src="{%static 'image/book.png'%}"><br>
         <div class="browse-content">
-            <b>Title:</b>Lorem ipsum<br>
-                    <b>Year:</b><br>
-                    <b>Abstract:</b> dolor sit amet consectetur adipisicing elit. Nulla possimus, voluptatem nihil
-                    corrupti, autem quas velit cupiditate corporis quis nam maiores dolore molestias aspernatur? Suscipit
-                    possimus assumenda accusamus consequatur error?<br>
+            <b>Title:</b> {{i}} <br>
             <div class="eye">
                 <i class="fa-solid fa-eye"></i> Views
             </div>
         </div>
     </div>
-
-    <div class="card">
-        <img src="{%static 'image/book.png'%}"><br>
-        <div class="browse-content">
-            <b>Title:</b>Lorem ipsum<br>
-                    <b>Year:</b><br>
-                    <b>Abstract:</b> dolor sit amet consectetur adipisicing elit. Nulla possimus, voluptatem nihil
-                    corrupti, autem quas velit cupiditate corporis quis nam maiores dolore molestias aspernatur? Suscipit
-                    possimus assumenda accusamus consequatur error?<br>
-            <div class="eye">
-                <i class="fa-solid fa-eye"></i> Views
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="{%static 'image/book.png'%}"><br>
-        <div class="browse-content">
-            <b>Title:</b>Lorem ipsum<br>
-                    <b>Year:</b><br>
-                    <b>Abstract:</b> dolor sit amet consectetur adipisicing elit. Nulla possimus, voluptatem nihil
-                    corrupti, autem quas velit cupiditate corporis quis nam maiores dolore molestias aspernatur? Suscipit
-                    possimus assumenda accusamus consequatur error?<br>
-            <div class="eye">
-                <i class="fa-solid fa-eye"></i> Views
-            </div>
-        </div>
-    </div>
+    {% endfor %}
 </div>
 
 {% endblock %}
