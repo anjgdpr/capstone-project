@@ -15,6 +15,7 @@ from django.templatetags.static import static
 from django.views.decorators.csrf import csrf_exempt
 from django.utils import timezone
 import datetime
+import csv
 
 now = datetime.datetime.now()
 
@@ -107,6 +108,7 @@ def s_detail(request, book_id): #student paper detail
     #path = os.path.join(os.path.dirname(__file__), 'try.csv')
     #data = pd.read_csv(path)
     data = pd.read_csv('try.csv', sep=',', encoding='utf-8')
+    match = pd.read_csv('match.csv', sep=',', encoding='latin-1')
     papers = pd.read_csv('papers.csv', sep=',', encoding='latin-1')
     ratings = pd.read_csv('papers-ratings.csv', sep=',', encoding='latin-1')
     ratings = pd.merge(papers, ratings).drop(['timestamp'], axis=1)
@@ -126,25 +128,37 @@ def s_detail(request, book_id): #student paper detail
             top_n_indexes = list(score_series.iloc[1:n+1].index)
             for i in top_n_indexes:
                 recommended_books.append(list(data.index)[i]) # data.index for book_id #['Title'] for title 
+            
             return recommended_books
+        
         book = Book.objects.get(pk=book_id)
         recommend = recommendations(book_id, 3)
         new = Book.objects.filter(id__in=recommend)  
         
+        # START OF ALGORITHM FOR COLLABORATIVE FILTERING
         def get_similar(paper_name,rating):
             similar_ratings = corrMatrix[paper_name]*(rating-2.5)
             similar_ratings = similar_ratings.sort_values(ascending=False)
-            #print(type(similar_ratings))
             return similar_ratings
         
-        strama = [("Factors Affecting CPA Licensure Examination Performance: A PLM Graduate's Insight",5),("A Strategic Financial Plan for Queso de Camote",5),("A Further Enhancement of the Term Frequency Inverse Document Frequency Algorithm Applied in Document Search Engine",5),("A Further Enhancement of the Simple Naive Algorithm Applied In-Text Summarizer",5)]
+        strama = [("ColApps: A Mobile Application to Identify the Legitimate Public Transportation through Arduino Technology ",5),("A Strategic Financial Plan for Queso de Camote",5),("A Further Enhancement of the Term Frequency Inverse Document Frequency Algorithm Applied in Document Search Engine",5),("A Further Enhancement of the Simple Naive Algorithm Applied In-Text Summarizer",5)]
         collab = pd.DataFrame()
         for paper,rating in strama:
             collab = collab.append(get_similar(paper,rating),ignore_index = True)
         collab = list(collab.columns.values)
-        print(collab)
-        collab = collab[0:3]
-        #print(collab)
+        ids = []
+    
+        for i in collab: # to get index of titles same as the model 
+            match = csv.reader(open('match.csv', 'r'))
+            for row in match:
+                if i==row[0]:
+                    ids.append(list(row)[1])
+                    
+        res = [eval(i) for i in ids]
+        res = res[1:4]
+        collab = Book.objects.filter(id__in=res)
+        print(res)
+
             
     except Book.DoesNotExist: 
         raise Http404("Title does not exist")    

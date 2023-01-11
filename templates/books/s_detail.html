@@ -83,11 +83,14 @@
 
 <h2><u>Based on your recent activity: </u></h2><br>
  <div class="flex">
-    {% for i in collab %}
+    {% for book in collab %}
     <div class="card">
-        <img src="{%static 'image/book.png'%}"><br>
+        <a href="{% url 's_detail' book.id %}">
+        <img src="/books/media/{{book.book_image}}" alt="bookimage"></a><br>
         <div class="browse-content">
-            <b>Title:</b> {{i}} <br>
+            <b>Title:</b> <a href="{% url 's_detail' book.id %}"> {{book.book_title}} </a><br>
+            <b>College:</b> {{book.book_college}} <br>
+            <b>Course:</b> {{book.book_course}}  <br><br>
             <div class="eye">
                 <i class="fa-solid fa-eye"></i> Views
             </div>

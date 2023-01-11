@@ -107,7 +107,7 @@ a:visited {
 .user{
     /*display: inline-block;*/
     padding: 20px;
-    width: 100px;
+    width: 120px;
     float: right;
     color:#000;
 }
@@ -152,7 +152,7 @@ a:visited {
 	display: block; 
 	position: absolute; 
 	right: 0; 
-    width: 400px;
+    width: 120px;
 	top: 67px; 
 	background-color: #fff; 
 	text-decoration: none; 
@@ -165,7 +165,7 @@ a:visited {
 .dropdown-menu.openMenu{
     max-height: 250px;
     background-color: #FFF;
-    width: 400px;
+    width: 120px;
     opacity: 1;
      border: 1px solid #D9D9D9;
 }

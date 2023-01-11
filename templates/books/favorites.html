@@ -82,10 +82,14 @@
                     </div>
                     <div class="addtl-info">
                         <div>
-                            <i class="fa-solid fa-eye"></i> Views
+                            <a style="color: red;" href="{% url 'favorite_add' book.id %}"> Remove</a>
                         </div>
                     </div>
                 </div>
+                {% empty %}
+                <br><br><br><br>
+                    <center> No papers found </center>
+                <br><br>
                 {% endfor %}
             </div>
         </div>
@@ -110,6 +114,10 @@
                     </div>
                 </div>
             </div>
+            {% empty %}
+                <br><br><br>
+                    <center> No papers found </center>
+                <br><br><br><br>
             {% endfor %}
         </div>
         <!--end ng list-->
