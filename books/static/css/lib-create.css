@@ -152,7 +152,6 @@ a:visited {
 	display: block; 
 	position: absolute; 
 	right: 0; 
-    width: 400px;
 	top: 67px; 
 	background-color: #fff; 
 	text-decoration: none; 
@@ -189,7 +188,7 @@ a:visited {
 .dd-menu a:hover{
     background-color: #FFEA5A;
     border: 16px solid #FFEA5A;
-    transition: 0.1s;
+    /*transition: 0.1s;*/
     width: 100%;
 }
 

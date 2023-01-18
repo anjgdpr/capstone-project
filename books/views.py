@@ -141,9 +141,9 @@ def s_detail(request, book_id): #student paper detail
             similar_ratings = similar_ratings.sort_values(ascending=False)
             return similar_ratings
         
-        strama = [("ColApps: A Mobile Application to Identify the Legitimate Public Transportation through Arduino Technology ",5),("A Strategic Financial Plan for Queso de Camote",5),("A Further Enhancement of the Term Frequency Inverse Document Frequency Algorithm Applied in Document Search Engine",5),("A Further Enhancement of the Simple Naive Algorithm Applied In-Text Summarizer",5)]
+        fav_papers = [("ColApps: A Mobile Application to Identify the Legitimate Public Transportation through Arduino Technology ",5),("A Strategic Financial Plan for Queso de Camote",5),("A Further Enhancement of the Term Frequency Inverse Document Frequency Algorithm Applied in Document Search Engine",5),("A Further Enhancement of the Simple Naive Algorithm Applied In-Text Summarizer",5)]
         collab = pd.DataFrame()
-        for paper,rating in strama:
+        for paper,rating in fav_papers:
             collab = collab.append(get_similar(paper,rating),ignore_index = True)
         collab = list(collab.columns.values)
         ids = []
@@ -157,9 +157,7 @@ def s_detail(request, book_id): #student paper detail
         res = [eval(i) for i in ids]
         res = res[1:4]
         collab = Book.objects.filter(id__in=res)
-        print(res)
 
-            
     except Book.DoesNotExist: 
         raise Http404("Title does not exist")    
     return render (request, 'books/s_detail.html', {'book':book, 'fav':fav, 'recommend':recommend, 'new':new, 'collab':collab}) #
@@ -295,19 +293,20 @@ def libfilterview(request): #admin filter
     college = request.GET.get('slct1')
     course = request.GET.get('slct2')
     section = request.GET.get('Type')
+    YEAR = datetime.datetime.now().year
     
     if sort_by == 'Year': 
         qs = qs.order_by('-pub_year')
     elif sort_by == '2017': 
-        qs = Book.objects.filter ( Q (pub_year__icontains=2017) )
+        qs = Book.objects.filter (pub_year=YEAR-6 )
     elif sort_by == '2018': 
-        qs = Book.objects.filter ( Q (pub_year__icontains=2018) )
+        qs = Book.objects.filter (pub_year=YEAR-5 )
     elif sort_by == '2019': 
-        qs = Book.objects.filter ( Q (pub_year__icontains=2019) )
+        qs = Book.objects.filter (pub_year=YEAR-4 )
     elif sort_by == '2020': 
-        qs = Book.objects.filter ( Q (pub_year__icontains=2020) )
+        qs = Book.objects.filter (pub_year=YEAR-3 )
     elif sort_by == '2021': 
-        qs = Book.objects.filter ( Q (pub_year__icontains=2021) )
+        qs = Book.objects.filter (pub_year=YEAR-2 )
     if college != 'Colleges' and college is not None:
         qs = qs.filter(book_college=college)
     if course != '' and course is not None:
